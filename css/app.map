@@ -1,0 +1,28 @@
+{
+	"version": 3,
+	"file": "app.css",
+	"sources": [
+		"../scss/app.scss",
+		"../scss/utils/_mixins.scss",
+		"../scss/components/_components.scss",
+		"../scss/utils/_variables.scss",
+		"../scss/utils/_functions.scss",
+		"../scss/layout/_sections.scss",
+		"../scss/layout/_footer.scss",
+		"../scss/layout/_header.scss",
+		"../scss/base/_base.scss"
+	],
+	"sourcesContent": [
+		"\n@import \"utils/mixins\";\n@import \"components/components\";\n@import \"utils/variables\";\n@import \"utils/functions\";\n\n@import \"layout/sections\";\n@import \"layout/footer\";\n@import \"layout/header\";\n@import \"base/base\";",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		""
+	],
+	"names": [],
+	"mappings": ""
+}
