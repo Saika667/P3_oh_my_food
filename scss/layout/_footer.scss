@@ -1,0 +1,29 @@
+footer {
+    background-color: lighten(black, 20%);
+    padding: 5%;
+    width: 100%;
+    box-sizing: border-box;
+    
+    > div {
+        margin-bottom: 3%;
+        display: flex;
+
+        h2 {
+            color: white;
+            font-family: 'Shrikhand', sans-serif;
+            margin-bottom: 4%;
+        }
+
+        i {
+            color: white;
+        }
+
+        a {
+            color: white;
+        }
+    }
+}
+
+.footer-containerI {
+    width: 7%;
+}

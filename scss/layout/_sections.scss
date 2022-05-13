@@ -1,0 +1,220 @@
+.search {
+    background-color: #F2F2F2;
+
+    &-location {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        background-color: darken(#F2F2F2, 5%);
+
+        &-containerI {
+            width: 15%;
+            display: flex;
+            justify-content: end;
+        }
+
+        input {
+            margin: 5% 0;
+            border: none;
+            background: initial;
+            font-size: 16px;
+            font-weight: 600;
+            width: 50%;
+            padding-left: 4%;
+        }
+    }
+
+    &-description {
+        text-align: center;
+
+        h1 {
+            font-weight: bold;
+            width: 65%;
+            margin: 6% auto;
+        }
+
+        h2 {
+            color: darken(#F2F2F2, 50%);
+            font-weight: 400;
+        }
+    }
+}
+
+#button-research {
+    background: linear-gradient(-7deg, $primary-color 4%, $secondary-color 100%);
+    width: 60%;
+    height: 45px;
+    color: white;
+    font-size: 17px;
+    border-radius: 25px;
+    border: none;
+    margin: 5% 0;
+}
+
+.working {
+    margin: 10% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-title {
+        width: 80%;
+        margin-bottom: 5%;
+
+    }
+
+    &-proposal {
+        box-shadow: 0 3px 6px 5px rgba(0, 0, 0, 0.09);
+        background-color: #F2F2F2;
+        display: flex;
+        margin-bottom: 8%;
+        width: 80%;
+        height: 70px;
+        border-radius: 20px;
+        position: relative;
+
+        &-number {
+            background-color: $primary-color;
+            border-radius: 50%;
+            position: absolute;
+            left: -4%;
+            top: 33%;
+            width: 25px;
+            height: 25px;
+            line-height: 25px;
+            text-align: center;
+            color: white;
+        }
+
+        &-description {
+            display: flex;
+            align-items: baseline;
+            width: 100%;
+
+            &-containerI {
+                display: flex;
+                width: 30%;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+
+                i {
+                    color: darken(#F2F2F2, 30%);
+                }
+            }
+
+            h2 {
+                font-size: 15px;
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
+.restaurant {
+    width: 100%;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10% 0 7% 0;
+
+    &-title {
+        width: 90%;
+        margin-bottom: 5%;
+    }
+
+    &-ad {
+        width: 90%;
+        border-radius: 20px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 5%;
+        box-shadow: 0 3px 6px 5px rgba(0, 0, 0, 0.05);
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            height: 180px;
+        }
+
+        &-new {
+            position: absolute;
+            background-color: $third-color;
+            color: darken($third-color, 40%);
+            padding: 2% 3%;
+            right: 7%;
+            top: 6%;
+        }
+
+        &-description {
+            display: flex;
+            justify-content: space-between;
+
+            h2 {
+                white-space: nowrap;
+                margin: 7% 0 2% 7%;
+            }
+
+            p {
+                margin: 3% 0 0 7%;
+            }
+
+            i {
+                font-size: 30px;
+                color: darken(#F2F2F2, 30%);
+                margin: 7%;
+            }
+        }
+    }
+}
+
+.starter {
+
+    &-proposal {
+
+        &-description {
+
+        }
+
+        &-price {
+
+        }
+    }
+}
+
+.dishes {
+
+    &-proposal {
+
+        &-description {
+
+        }
+
+        &-price {
+
+        }
+    }
+}
+
+.desserts {
+
+    &-proposal {
+
+        &-description {
+
+        }
+
+        &-price {
+
+        }
+    }
+}
+
+.check-animation {
+
+}

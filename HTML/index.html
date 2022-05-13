@@ -8,30 +8,35 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Shrikhand&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="../css/app.css">
     </head>
     
 	<body>
         <header>
-            <img src="../images/ohmyfood.png" id="ohMyFoodLogo" alt="logo-oh-my-food"/>
+            <img src="../images/ohmyfood.png" id="oh-my-food-logo" alt="logo-oh-my-food"/>
         </header>
 
         <main>
-            <section id="search">
-                <div id="search-location">
-                    <i class="fas fa-map-marker-alt"></i>
+            <section class="search">
+                <div class="search-location">
+                    <div class="search-location-containerI">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    
                     <input type="text" value="Paris, Belleville"/>
                 </div>
 
-                <div id="search-description">
+                <div class="search-description">
                     <h1>Réservez le menu qui vous convient</h1>
-                    <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+                    <h2>Découvrez des restaurants d'exception, sélectionnés par nos soins.</h2>
                     <button id="button-research" type="button">Explorer nos restaurants</button>
                 </div>
             </section>
         
             <section class="working">
-                <h1>Fonctionnement</h1>
+                <div class="working-title">
+                    <h1>Fonctionnement</h1>
+                </div>
 
                 <div class="working-proposal">
                     <div class="working-proposal-number">
@@ -39,7 +44,10 @@
                     </div>
 
                     <div class="working-proposal-description">
-                        <i class="fas fa-mobile-alt"></i>
+                        <div class="working-proposal-description-containerI">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        
                         <h2>Choisissez un restaurant</h2>
                     </div>
                 </div>
@@ -50,7 +58,10 @@
                     </div>
 
                     <div class="working-proposal-description">
-                        <i class="fas fa-list-ul"></i>
+                        <div class="working-proposal-description-containerI">
+                            <i class="fas fa-list-ul"></i>
+                        </div>
+                        
                         <h2>Composez votre menu</h2>
                     </div>
                 </div>
@@ -61,76 +72,77 @@
                     </div>
 
                     <div class="working-proposal-description">
-                        <i class="fas fa-store"></i>
+                        <div class="working-proposal-description-containerI">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        
                         <h2>Dégustez au restaurant</h2>
                     </div>
                 </div>
             </section>
 
             <section class="restaurant">
-                <h1>Restaurants</h1>
+                <div class="restaurant-title">
+                    <h1>Restaurants</h1>
+                </div>
 
-                <a href="la-palette-du-gout.html">
-                    <div class="restaurant-ad">
-                        <img src="../images/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo-la-palette-du-gout"/>
+                <a href="la-palette-du-gout.html" class="restaurant-ad">
+                    <img src="../images/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo-la-palette-du-gout"/>
                         
-                        <div class="restaurant-ad-new">
-                            <span>Nouveau</span>
+                    <div class="restaurant-ad-new">
+                        <span>Nouveau</span>
+                    </div>
+
+                    <div class="restaurant-ad-description">
+                        <div>
+                            <h2>La palette du goût</h2>
+                            <p>Ménilmontant</p>
                         </div>
 
-                        <div class="restaurant-ad-descritption">
-                            <div>
-                                <h2>La palette du goût</h2>
-                                <p>Ménilmontant</p>
-                            </div>
-                            <i class="far fa-heart"></i>
-                        </div>
+                        <i class="far fa-heart"></i>
                     </div>
                 </a>
 
-                <a href="la-note-enchantee.html">
-                    <div class="restaurant-ad">
-                        <img src="../images/stil-u2Lp8tXIcjw-unsplash.jpg" alt="photo-la-note-enchantee"/>
+                <a href="la-note-enchantee.html" class="restaurant-ad">
+                    <img src="../images/stil-u2Lp8tXIcjw-unsplash.jpg" alt="photo-la-note-enchantee"/>
                         
-                        <div class="restaurant-ad-new">
-                            <span>Nouveau</span>
-                        </div>
+                    <div class="restaurant-ad-new">
+                        <span>Nouveau</span>
+                    </div>
 
-                        <div class="restaurant-ad-descritption">
-                            <div>
-                                <h2>La note enchantée</h2>
-                                <p>Charonne</p>
-                            </div>
-                            <i class="far fa-heart"></i>
+                    <div class="restaurant-ad-description">
+                        <div>
+                            <h2>La note enchantée</h2>
+                            <p>Charonne</p>
                         </div>
+                        
+                        <i class="far fa-heart"></i>
+                    </div> 
+                </a>
+
+                <a href="a-la-francaise.html" class="restaurant-ad">
+                    <img src="../images/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo-a-la-française"/>
+                    
+                    <div class="restaurant-ad-description">
+                        <div>
+                            <h2>À la française</h2>
+                            <p>Cité Rouge</p>
+                        </div>
+                        
+                        <i class="far fa-heart"></i>
                     </div>
                 </a>
 
-                <a href="a-la-francaise.html">
-                    <div class="restaurant-ad">
-                        <img src="../images/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo-a-la-française"/>
-                        
-                        <div class="restaurant-ad-descritption">
-                            <div>
-                                <h2>À la française</h2>
-                                <p>Cité Rouge</p>
-                            </div>
-                            <i class="far fa-heart"></i>
+                <a href="le-delice-des-sens.html" class="restaurant-ad">
+                    <img src="../images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="photo-le-delice-des-sens"/>
+                    
+                    <div class="restaurant-ad-description">
+                        <div>
+                            <h2>Le délice des sens</h2>
+                            <p>Folie-Méricourt</p>
                         </div>
-                    </div>
-                </a>
 
-                <a href="le-delice-des-sens.html">
-                    <div class="restaurant-ad">
-                        <img src="../images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="photo-le-delice-des-sens"/>
-                        
-                        <div class="restaurant-ad-descritption">
-                            <div>
-                                <h2>Le délice des sens</h2>
-                                <p>Folie-Méricourt</p>
-                            </div>
-                            <i class="far fa-heart"></i>
-                        </div>
+                        <i class="far fa-heart"></i>
                     </div>
                 </a>
             </section>
@@ -142,12 +154,18 @@
             </div>
 
             <div>
-                <i class="fas fa-utensils"></i>
+                <div class="footer-containerI">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                
                 <a href="#">Proposer un restaurant</a>
             </div>
 
             <div>
-                <i class="fas fa-hands-helping"></i>
+                <div class="footer-containerI">
+                    <i class="fas fa-hands-helping"></i>
+                </div>
+                
                 <a href="#">Devenir partenaire</a>
             </div>
 

@@ -1,2 +1,273 @@
+/* line 1, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_sections.scss */
+.search {
+  background-color: #F2F2F2;
+}
+
+/* line 4, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_sections.scss */
+.search-location {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  background-color: #e5e5e5;
+}
+
+/* line 10, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_sections.scss */
+.search-location-containerI {
+  width: 15%;
+  display: flex;
+  justify-content: end;
+}
+
+/* line 16, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_sections.scss */
+.search-location input {
+  margin: 5% 0;
+  border: none;
+  background: initial;
+  font-size: 16px;
+  font-weight: 600;
+  width: 50%;
+  padding-left: 4%;
+}
+
+/* line 27, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_sections.scss */
+.search-description {
+  text-align: center;
+}
+
+/* line 30, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_sections.scss */
+.search-description h1 {
+  font-weight: bold;
+  width: 65%;
+  margin: 6% auto;
+}
+
+/* line 36, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_sections.scss */
+.search-description h2 {
+  color: #737373;
+  font-weight: 400;
+}
+
+/* line 43, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_sections.scss */
+#button-research {
+  background: linear-gradient(-7deg, #9356DC 4%, #FF79DA 100%);
+  width: 60%;
+  height: 45px;
+  color: white;
+  font-size: 17px;
+  border-radius: 25px;
+  border: none;
+  margin: 5% 0;
+}
+
+/* line 54, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_sections.scss */
+.working {
+  margin: 10% 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* line 60, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_sections.scss */
+.working-title {
+  width: 80%;
+  margin-bottom: 5%;
+}
+
+/* line 66, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_sections.scss */
+.working-proposal {
+  box-shadow: 0 3px 6px 5px rgba(0, 0, 0, 0.09);
+  background-color: #F2F2F2;
+  display: flex;
+  margin-bottom: 8%;
+  width: 80%;
+  height: 70px;
+  border-radius: 20px;
+  position: relative;
+}
+
+/* line 76, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_sections.scss */
+.working-proposal-number {
+  background-color: #9356DC;
+  border-radius: 50%;
+  position: absolute;
+  left: -4%;
+  top: 33%;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  color: white;
+}
+
+/* line 89, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_sections.scss */
+.working-proposal-description {
+  display: flex;
+  align-items: baseline;
+  width: 100%;
+}
+
+/* line 94, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_sections.scss */
+.working-proposal-description-containerI {
+  display: flex;
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/* line 101, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_sections.scss */
+.working-proposal-description-containerI i {
+  color: #a6a6a6;
+}
+
+/* line 106, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_sections.scss */
+.working-proposal-description h2 {
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+/* line 114, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_sections.scss */
+.restaurant {
+  width: 100%;
+  background-color: #F2F2F2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10% 0 7% 0;
+}
+
+/* line 122, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_sections.scss */
+.restaurant-title {
+  width: 90%;
+  margin-bottom: 5%;
+}
+
+/* line 127, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_sections.scss */
+.restaurant-ad {
+  width: 90%;
+  border-radius: 20px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 5%;
+  box-shadow: 0 3px 6px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* line 139, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_sections.scss */
+.restaurant-ad img {
+  width: 100%;
+  object-fit: cover;
+  height: 180px;
+}
+
+/* line 145, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_sections.scss */
+.restaurant-ad-new {
+  position: absolute;
+  background-color: #99E2D0;
+  color: #278870;
+  padding: 2% 3%;
+  right: 7%;
+  top: 6%;
+}
+
+/* line 154, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_sections.scss */
+.restaurant-ad-description {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 158, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_sections.scss */
+.restaurant-ad-description h2 {
+  white-space: nowrap;
+  margin: 7% 0 2% 7%;
+}
+
+/* line 163, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_sections.scss */
+.restaurant-ad-description p {
+  margin: 3% 0 0 7%;
+}
+
+/* line 167, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_sections.scss */
+.restaurant-ad-description i {
+  font-size: 30px;
+  color: #a6a6a6;
+  margin: 7%;
+}
+
+/* line 1, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_footer.scss */
+footer {
+  background-color: #333333;
+  padding: 5%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* line 7, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_footer.scss */
+footer > div {
+  margin-bottom: 3%;
+  display: flex;
+}
+
+/* line 11, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_footer.scss */
+footer > div h2 {
+  color: white;
+  font-family: 'Shrikhand', sans-serif;
+  margin-bottom: 4%;
+}
+
+/* line 17, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_footer.scss */
+footer > div i {
+  color: white;
+}
+
+/* line 21, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_footer.scss */
+footer > div a {
+  color: white;
+}
+
+/* line 27, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_footer.scss */
+.footer-containerI {
+  width: 7%;
+}
+
+/* line 1, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_header.scss */
+#oh-my-food-logo {
+  display: flex;
+  width: 60%;
+  margin: 5% auto;
+}
+
+/* line 1, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/base/_base.scss */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+/* line 6, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/base/_base.scss */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 11, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/base/_base.scss */
+h1 {
+  font-size: 22px;
+  margin: 0;
+}
+
+/* line 16, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/base/_base.scss */
+h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+/* line 21, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/base/_base.scss */
+p {
+  font-size: 16px;
+  margin: 0;
+}
 
 /*# sourceMappingURL=app.css.map */
