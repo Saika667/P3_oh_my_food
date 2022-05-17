@@ -1,9 +1,54 @@
-/* line 1, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_sections.scss */
+@charset "UTF-8";
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-size: 22px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+p {
+  font-size: 16px;
+  margin: 0;
+}
+
+hr {
+  width: 37px;
+  height: 2px;
+  background-color: #99E2D0;
+  margin: 5px 0 13px 0;
+  border: none;
+}
+
+/*-------------------------------------------------------------------------------------
+                                    Breakpoint desktop (grand écran)
+-------------------------------------------------------------------------------------*/
+@media all and (min-width: 1920px) {
+  body > * {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+}
+
+/*-------------------------------------------------------------------------------------
+                                    FIN Breakpoint desktop (grand écran)
+-------------------------------------------------------------------------------------*/
 .search {
   background-color: #F2F2F2;
 }
 
-/* line 4, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_sections.scss */
 .search-location {
   display: flex;
   justify-content: center;
@@ -11,14 +56,12 @@
   background-color: #e5e5e5;
 }
 
-/* line 10, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_sections.scss */
-.search-location-containerI {
+.search-location-container-icon {
   width: 15%;
   display: flex;
   justify-content: end;
 }
 
-/* line 16, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_sections.scss */
 .search-location input {
   margin: 5% 0;
   border: none;
@@ -29,37 +72,27 @@
   padding-left: 4%;
 }
 
-/* line 27, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_sections.scss */
 .search-description {
   text-align: center;
 }
 
-/* line 30, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_sections.scss */
 .search-description h1 {
   font-weight: bold;
   width: 65%;
   margin: 6% auto;
 }
 
-/* line 36, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_sections.scss */
 .search-description h2 {
   color: #737373;
   font-weight: 400;
 }
 
-/* line 43, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_sections.scss */
-#button-research {
-  background: linear-gradient(-7deg, #9356DC 4%, #FF79DA 100%);
+.search-description-container-button {
   width: 60%;
-  height: 45px;
-  color: white;
-  font-size: 17px;
-  border-radius: 25px;
-  border: none;
-  margin: 5% 0;
+  margin: auto;
+  padding: 5%;
 }
 
-/* line 54, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_sections.scss */
 .working {
   margin: 10% 0;
   display: flex;
@@ -67,15 +100,13 @@
   align-items: center;
 }
 
-/* line 60, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_sections.scss */
 .working-title {
   width: 80%;
   margin-bottom: 5%;
 }
 
-/* line 66, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_sections.scss */
 .working-proposal {
-  box-shadow: 0 3px 6px 5px rgba(0, 0, 0, 0.09);
+  box-shadow: 0 5px 9px 3px rgba(0, 0, 0, 0.15);
   background-color: #F2F2F2;
   display: flex;
   margin-bottom: 8%;
@@ -83,14 +114,14 @@
   height: 70px;
   border-radius: 20px;
   position: relative;
+  cursor: pointer;
 }
 
-/* line 76, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_sections.scss */
 .working-proposal-number {
   background-color: #9356DC;
   border-radius: 50%;
   position: absolute;
-  left: -4%;
+  left: -12px;
   top: 33%;
   width: 25px;
   height: 25px;
@@ -99,15 +130,13 @@
   color: white;
 }
 
-/* line 89, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_sections.scss */
 .working-proposal-description {
   display: flex;
   align-items: baseline;
   width: 100%;
 }
 
-/* line 94, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_sections.scss */
-.working-proposal-description-containerI {
+.working-proposal-description-container-icon {
   display: flex;
   width: 30%;
   align-items: center;
@@ -115,18 +144,23 @@
   height: 100%;
 }
 
-/* line 101, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_sections.scss */
-.working-proposal-description-containerI i {
+.working-proposal-description-container-icon i {
   color: #a6a6a6;
 }
 
-/* line 106, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_sections.scss */
 .working-proposal-description h2 {
   font-size: 15px;
   white-space: nowrap;
 }
 
-/* line 114, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_sections.scss */
+.working-proposal:hover {
+  background-color: rgba(147, 86, 220, 0.2);
+}
+
+.working-proposal:hover i {
+  color: #9356DC;
+}
+
 .restaurant {
   width: 100%;
   background-color: #F2F2F2;
@@ -136,13 +170,11 @@
   padding: 10% 0 7% 0;
 }
 
-/* line 122, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_sections.scss */
 .restaurant-title {
   width: 90%;
   margin-bottom: 5%;
 }
 
-/* line 127, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_sections.scss */
 .restaurant-ad {
   width: 90%;
   border-radius: 20px;
@@ -156,14 +188,13 @@
   box-shadow: 0 3px 6px 5px rgba(0, 0, 0, 0.05);
 }
 
-/* line 139, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_sections.scss */
 .restaurant-ad img {
   width: 100%;
   object-fit: cover;
+  object-position: center;
   height: 180px;
 }
 
-/* line 145, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_sections.scss */
 .restaurant-ad-new {
   position: absolute;
   background-color: #99E2D0;
@@ -173,31 +204,273 @@
   top: 6%;
 }
 
-/* line 154, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_sections.scss */
 .restaurant-ad-description {
   display: flex;
   justify-content: space-between;
+  height: 70px;
 }
 
-/* line 158, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_sections.scss */
 .restaurant-ad-description h2 {
   white-space: nowrap;
   margin: 7% 0 2% 7%;
 }
 
-/* line 163, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_sections.scss */
 .restaurant-ad-description p {
   margin: 3% 0 0 7%;
 }
 
-/* line 167, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_sections.scss */
-.restaurant-ad-description i {
-  font-size: 30px;
-  color: #a6a6a6;
-  margin: 7%;
+.restaurant-ad-description-container-icon {
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* line 1, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_footer.scss */
+.heart {
+  color: #a6a6a6;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.heart:hover, .heart :active {
+  opacity: 1;
+  background: linear-gradient(-7deg, #9356DC 4%, #FF79DA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+/*-------------------------------------------------------------------------------------
+                                    Breakpoint desktop
+-------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------
+                                    FIN Breakpoint desktop
+-------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------
+                                    Breakpoint tablette
+-------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------
+                                    FIN Breakpoint tablette
+-------------------------------------------------------------------------------------*/
+.main {
+  width: 100%;
+}
+
+.main img {
+  width: 100%;
+  position: relative;
+}
+
+.menu {
+  width: 100%;
+  background-color: #F2F2F2;
+  margin-top: -30px;
+  position: relative;
+  z-index: 1;
+  border-radius: 30px 30px 0 0;
+}
+
+.menu-title {
+  background-color: #F2F2F2;
+  border-radius: 30px 30px 0 0;
+  display: flex;
+  justify-content: space-between;
+  height: 130px;
+  font-family: 'shrikhand', sans-serif;
+  line-height: 130px;
+  width: 94%;
+  margin: auto;
+}
+
+.menu-title h1 {
+  font-size: 40px;
+  letter-spacing: 2px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.menu-title-container-icon {
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-title-container-icon i {
+  color: #a6a6a6;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.proposal {
+  background-color: white;
+  border-radius: 20px;
+  height: 80px;
+  box-sizing: border-box;
+  width: 94%;
+  padding: 12px 24px 12px 12px;
+  margin: 0 auto 15px auto;
+  box-shadow: 0 5px 9px 3px rgba(0, 0, 0, 0.15);
+}
+
+.proposal-description {
+  margin-bottom: 8px;
+}
+
+.proposal-description h2 {
+  font-size: 23px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.proposal-price {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.proposal-price span {
+  font-weight: bold;
+}
+
+.proposal-price p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.starter {
+  background-color: #F2F2F2;
+}
+
+.starter-title {
+  text-transform: uppercase;
+  margin: 0 0 0 3%;
+}
+
+.dishes {
+  background-color: #F2F2F2;
+}
+
+.dishes-title {
+  text-transform: uppercase;
+  margin: 13% 0 0 3%;
+}
+
+.desserts {
+  background-color: #F2F2F2;
+}
+
+.desserts-title {
+  text-transform: uppercase;
+  margin: 13% 0 0 3%;
+}
+
+.button-command-container {
+  width: 60%;
+  margin: auto;
+  padding: 10% 0 20% 0;
+}
+
+.check-animation {
+  display: none;
+}
+
+/*-------------------------------------------------------------------------------------
+                                    Breakpoint desktop
+-------------------------------------------------------------------------------------*/
+@media all and (min-width: 1301px) {
+  hr {
+    margin: 2% 0;
+  }
+  .menu-title {
+    width: 90%;
+  }
+  .starter,
+  .dishes,
+  .desserts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+  }
+  .starter-title,
+  .dishes-title,
+  .desserts-title {
+    width: 100%;
+    font-size: 37px;
+  }
+  .starter-title {
+    margin: 0;
+  }
+  .dishes-title {
+    margin: 4% 0 0 0;
+  }
+  .desserts-title {
+    margin: 4% 0 0 0;
+  }
+  .proposal {
+    width: 30%;
+  }
+  .button-command-container {
+    width: 40%;
+    padding: 10% 0 12% 0;
+  }
+}
+
+/*-------------------------------------------------------------------------------------
+                                    FIN Breakpoint desktop
+-------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------
+                                    Breakpoint tablette
+-------------------------------------------------------------------------------------*/
+@media all and (min-width: 769px) and (max-width: 1300px) {
+  hr {
+    margin: 1% 0;
+  }
+  .menu-title {
+    width: 90%;
+  }
+  .starter,
+  .dishes,
+  .desserts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+  }
+  .starter-title,
+  .dishes-title,
+  .desserts-title {
+    width: 100%;
+    font-size: 27px;
+  }
+  .starter-title {
+    margin: 0;
+  }
+  .dishes-title {
+    margin: 4% 0 0 0;
+  }
+  .desserts-title {
+    margin: 4% 0 0 0;
+  }
+  .proposal {
+    width: 45%;
+    margin: 0 0 3% 0;
+  }
+  .button-command-container {
+    width: 50%;
+    padding: 6% 0 7% 0;
+  }
+}
+
+/*-------------------------------------------------------------------------------------
+                                    FIN Breakpoint tablette
+-------------------------------------------------------------------------------------*/
 footer {
   background-color: #333333;
   padding: 5%;
@@ -205,69 +478,143 @@ footer {
   box-sizing: border-box;
 }
 
-/* line 7, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_footer.scss */
 footer > div {
   margin-bottom: 3%;
   display: flex;
 }
 
-/* line 11, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_footer.scss */
 footer > div h2 {
+  font-size: 25px;
+  letter-spacing: 2px;
   color: white;
   font-family: 'Shrikhand', sans-serif;
-  margin-bottom: 4%;
+  margin-bottom: 2%;
 }
 
-/* line 17, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_footer.scss */
 footer > div i {
   color: white;
 }
 
-/* line 21, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_footer.scss */
 footer > div a {
   color: white;
 }
 
-/* line 27, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_footer.scss */
-.footer-containerI {
+.footer-container-icon {
   width: 7%;
 }
 
-/* line 1, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/layout/_header.scss */
+/*-------------------------------------------------------------------------------------
+                                    Breakpoint desktop
+-------------------------------------------------------------------------------------*/
+@media all and (min-width: 1301px) {
+  footer > div {
+    margin-bottom: 2%;
+  }
+  .footer-container-icon {
+    width: 4%;
+  }
+}
+
+/*-------------------------------------------------------------------------------------
+                                    FIN Breakpoint desktop
+-------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------
+                                    Breakpoint tablette
+-------------------------------------------------------------------------------------*/
+@media all and (min-width: 769px) and (max-width: 1300px) {
+  footer > div {
+    margin-bottom: 2%;
+  }
+  .footer-container-icon {
+    width: 4%;
+  }
+}
+
+/*-------------------------------------------------------------------------------------
+                                    FIN Breakpoint tablette
+-------------------------------------------------------------------------------------*/
 #oh-my-food-logo {
   display: flex;
   width: 60%;
   margin: 5% auto;
 }
 
-/* line 1, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/base/_base.scss */
-body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
+.header-menu {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  position: relative;
 }
 
-/* line 6, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/base/_base.scss */
-a {
-  text-decoration: none;
+/*-------------------------------------------------------------------------------------
+                                    Breakpoint desktop
+-------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------
+                                    FIN Breakpoint desktop
+-------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------
+                                    Breakpoint tablette
+-------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------
+                                    FIN Breakpoint tablette
+-------------------------------------------------------------------------------------*/
+#button-research {
+  background: linear-gradient(-7deg, #9356DC 4%, #FF79DA 100%);
+  width: 100%;
+  height: 45px;
+  color: white;
+  font-size: 17px;
+  border-radius: 25px;
+  box-shadow: 0 5px 9px 3px rgba(0, 0, 0, 0.15);
+  border: none;
+  cursor: pointer;
+}
+
+#button-research:hover {
+  background: linear-gradient(-7deg, #a16be0 4%, #ff93e1 100%);
+  box-shadow: 0 5px 9px 3px rgba(0, 0, 0, 0.3);
+}
+
+#button-back {
+  background-color: white;
+  border: none;
+  position: absolute;
+  left: 10px;
+  cursor: pointer;
+}
+
+#button-back i {
   color: black;
+  font-size: 20px;
 }
 
-/* line 11, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/base/_base.scss */
-h1 {
-  font-size: 22px;
-  margin: 0;
+/*-------------------------------------------------------------------------------------
+                                    Breakpoint desktop
+-------------------------------------------------------------------------------------*/
+@media all and (min-width: 1301px) {
+  #button-back {
+    left: 30px;
+  }
+  #button-back i {
+    font-size: 40px;
+  }
 }
 
-/* line 16, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/base/_base.scss */
-h2 {
-  font-size: 18px;
-  margin: 0;
+/*-------------------------------------------------------------------------------------
+                                    FIN Breakpoint desktop
+-------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------
+                                    Breakpoint tablette
+-------------------------------------------------------------------------------------*/
+@media all and (min-width: 769px) and (max-width: 1300px) {
+  #button-back {
+    left: 30px;
+  }
+  #button-back i {
+    font-size: 30px;
+  }
 }
 
-/* line 21, ../../../Documents/Openclassroom/Livrable/Projet-3/oh_my_food_soudrain_celine/soudrain_celine_1_code_052022/scss/base/_base.scss */
-p {
-  font-size: 16px;
-  margin: 0;
-}
-
-/*# sourceMappingURL=app.css.map */
+/*-------------------------------------------------------------------------------------
+                                    FIN Breakpoint tablette
+-------------------------------------------------------------------------------------*/

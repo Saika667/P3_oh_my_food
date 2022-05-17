@@ -1,13 +1,13 @@
 .search {
-    background-color: #F2F2F2;
+    background-color: $gray;
 
     &-location {
         display: flex;
         justify-content: center;
         align-items: baseline;
-        background-color: darken(#F2F2F2, 5%);
+        background-color: darken($gray, 5%);
 
-        &-containerI {
+        &-container-icon {
             width: 15%;
             display: flex;
             justify-content: end;
@@ -34,21 +34,16 @@
         }
 
         h2 {
-            color: darken(#F2F2F2, 50%);
+            color: darken($gray, 50%);
             font-weight: 400;
         }
-    }
-}
 
-#button-research {
-    background: linear-gradient(-7deg, $primary-color 4%, $secondary-color 100%);
-    width: 60%;
-    height: 45px;
-    color: white;
-    font-size: 17px;
-    border-radius: 25px;
-    border: none;
-    margin: 5% 0;
+        &-container-button {
+            width: 60%;
+            margin: auto;
+            padding: 5%;
+        }
+    }
 }
 
 .working {
@@ -64,20 +59,21 @@
     }
 
     &-proposal {
-        box-shadow: 0 3px 6px 5px rgba(0, 0, 0, 0.09);
-        background-color: #F2F2F2;
+        box-shadow: 0 5px 9px 3px rgba(0, 0, 0, 0.15);
+        background-color: $gray;
         display: flex;
         margin-bottom: 8%;
         width: 80%;
         height: 70px;
         border-radius: 20px;
         position: relative;
+        cursor: pointer;
 
         &-number {
             background-color: $primary-color;
             border-radius: 50%;
             position: absolute;
-            left: -4%;
+            left: -12px;
             top: 33%;
             width: 25px;
             height: 25px;
@@ -91,7 +87,7 @@
             align-items: baseline;
             width: 100%;
 
-            &-containerI {
+            &-container-icon {
                 display: flex;
                 width: 30%;
                 align-items: center;
@@ -99,7 +95,7 @@
                 height: 100%;
 
                 i {
-                    color: darken(#F2F2F2, 30%);
+                    color: darken($gray, 30%);
                 }
             }
 
@@ -108,12 +104,19 @@
                 white-space: nowrap;
             }
         }
+
+        &:hover {
+            background-color: rgba($primary-color, 0.2);
+            i {
+                color: $primary-color;
+            }
+        }
     }
 }
 
 .restaurant {
     width: 100%;
-    background-color: #F2F2F2;
+    background-color: $gray;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -139,6 +142,7 @@
         img {
             width: 100%;
             object-fit: cover;
+            object-position: center;
             height: 180px;
         }
 
@@ -154,6 +158,7 @@
         &-description {
             display: flex;
             justify-content: space-between;
+            height: 70px;
 
             h2 {
                 white-space: nowrap;
@@ -164,57 +169,45 @@
                 margin: 3% 0 0 7%;
             }
 
-            i {
-                font-size: 30px;
-                color: darken(#F2F2F2, 30%);
-                margin: 7%;
+            &-container-icon {
+                width: 70px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
         }
     }
 }
+.heart {
+    color: darken($gray, 30%);
+    font-size: 30px;
+    cursor: pointer;
 
-.starter {
-
-    &-proposal {
-
-        &-description {
-
-        }
-
-        &-price {
-
-        }
+    &:hover, :active {
+        opacity: 1;
+        background: $gradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
     }
 }
 
-.dishes {
-
-    &-proposal {
-
-        &-description {
-
-        }
-
-        &-price {
-
-        }
-    }
-}
-
-.desserts {
-
-    &-proposal {
-
-        &-description {
-
-        }
-
-        &-price {
-
-        }
-    }
-}
-
-.check-animation {
+/*-------------------------------------------------------------------------------------
+                                    Breakpoint desktop
+-------------------------------------------------------------------------------------*/
+@media all and (min-width: 1301px) {
 
 }
+/*-------------------------------------------------------------------------------------
+                                    FIN Breakpoint desktop
+-------------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------------------------
+                                    Breakpoint tablette
+-------------------------------------------------------------------------------------*/
+@media all and (min-width: 769px) and (max-width: 1300px) {
+
+}
+/*-------------------------------------------------------------------------------------
+                                    FIN Breakpoint tablette
+-------------------------------------------------------------------------------------*/

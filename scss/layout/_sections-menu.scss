@@ -1,0 +1,262 @@
+.main {
+    width: 100%;
+
+    img {
+        width: 100%;
+        position: relative;
+    }
+}
+.menu {
+    width: 100%;
+    background-color: $gray;
+    margin-top: -30px;
+    position: relative;
+    z-index: 1;
+    //position relative car z-index fonctionne qu'avec les éléments positionnés
+    border-radius: 30px 30px 0 0;
+
+    &-title {
+        background-color: $gray;
+        border-radius: 30px 30px 0 0;
+        display: flex;
+        justify-content: space-between;
+        height: 130px;
+        font-family: 'shrikhand', sans-serif;
+        line-height: 130px;
+        width: 94%;
+        margin: auto;
+        
+
+        h1 {
+            font-size: 40px;
+            letter-spacing: 2px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        
+        &-container-icon {
+            width: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            i {
+                color: darken($gray, 30%);
+                font-size: 30px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.proposal {
+    background-color: white;
+    border-radius: 20px;
+    height: 80px;
+    box-sizing: border-box;
+    width: 94%;
+    padding: 12px 24px 12px 12px;
+    margin: 0 auto 15px auto;
+    box-shadow: 0 5px 9px 3px rgba(0, 0, 0, 0.15);
+
+    &-description {
+        margin-bottom: 8px;
+
+        h2 {
+            font-size: 23px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    }
+
+    &-price {
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+        
+        span {
+            font-weight: bold;
+        }
+
+        p{
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap; 
+        }
+    }
+}
+
+.starter {
+    background-color: $gray;
+
+    &-title {
+        text-transform: uppercase;
+        margin: 0 0 0 3%;
+    }
+
+    &-proposal {
+
+        &-description {
+
+        }
+
+        &-price {
+         
+        }
+    }
+}
+
+.dishes {
+    background-color: $gray;
+
+    &-title {
+        text-transform: uppercase;
+        margin: 13% 0 0 3%;
+    }
+
+    &-proposal {
+
+        &-description {
+
+        }
+
+        &-price {
+           
+        }
+    }
+}
+
+.desserts {
+    background-color: $gray;
+
+    &-title {
+        text-transform: uppercase;
+        margin: 13% 0 0 3%;
+    }
+
+    &-proposal {
+        
+        &-description {
+
+        }
+
+        &-price {
+        }
+    }
+}
+.button-command-container {
+    width: 60%;
+    margin: auto;
+    padding: 10% 0 20% 0;
+}
+
+.check-animation {
+    display: none;
+}
+
+/*-------------------------------------------------------------------------------------
+                                    Breakpoint desktop
+-------------------------------------------------------------------------------------*/
+@media all and (min-width: 1301px) {
+    hr {
+        margin: 2% 0;
+    }
+
+    .menu-title {
+        width: 90%;
+    }
+
+    .starter,
+    .dishes,
+    .desserts {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+
+        &-title {
+            width: 100%;
+            font-size: 37px;
+        }
+    }
+
+    .starter-title {
+        margin: 0;
+    }
+
+    .dishes-title {
+        margin: 4% 0 0 0;
+    }
+
+    .desserts-title {
+        margin: 4% 0 0 0;
+    }
+
+    .proposal {
+        width: 30%;
+    }
+
+    .button-command-container {
+        width: 40%;
+        padding: 10% 0 12% 0;
+    }
+}
+/*-------------------------------------------------------------------------------------
+                                    FIN Breakpoint desktop
+-------------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------------------------
+                                    Breakpoint tablette
+-------------------------------------------------------------------------------------*/
+@media all and (min-width: 769px) and (max-width: 1300px) {
+    hr {
+        margin: 1% 0;
+    }
+
+    .menu-title {
+        width: 90%;
+    }
+
+    .starter,
+    .dishes,
+    .desserts {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+
+        &-title {
+            width: 100%;
+            font-size: 27px;
+        }
+    }
+
+    .starter-title {
+        margin: 0;
+    }
+
+    .dishes-title {
+        margin: 4% 0 0 0;
+    }
+
+    .desserts-title {
+        margin: 4% 0 0 0;
+    }
+
+    .proposal {
+        width: 45%;
+        margin: 0 0 3% 0;
+    }
+
+    .button-command-container {
+        width: 50%;
+        padding: 6% 0 7% 0;
+    }
+}
+/*-------------------------------------------------------------------------------------
+                                    FIN Breakpoint tablette
+-------------------------------------------------------------------------------------*/
