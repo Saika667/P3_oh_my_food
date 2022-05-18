@@ -196,7 +196,20 @@
                                     Breakpoint desktop
 -------------------------------------------------------------------------------------*/
 @media all and (min-width: 1301px) {
+    .working {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 5% 0;
 
+        &-title {
+            margin-bottom: 2%;
+        }
+
+        &-proposal {
+            width: 30%;
+            margin: auto;
+        }
+    }
 }
 /*-------------------------------------------------------------------------------------
                                     FIN Breakpoint desktop
@@ -206,7 +219,45 @@
                                     Breakpoint tablette
 -------------------------------------------------------------------------------------*/
 @media all and (min-width: 769px) and (max-width: 1300px) {
+    .working {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5px;
+        margin: 5% 0;
 
+        > div {
+            margin: 0 auto 5% auto;
+        }
+    
+        & :nth-child(2){
+            grid-row: 2;
+        }
+
+        & :nth-child(3) {
+            grid-row: 3;
+            grid-column: 2 / 3;
+        }
+
+        & :last-child {
+            grid-row: 4;
+            grid-column: 3 / 3;
+        }
+    }
+
+    .restaurant {
+    
+        &-title {
+
+        }
+    
+        &-ad {
+            width: 80%;
+            height: 360px;
+            img {
+                height: 280px;
+            }
+        }
+    }
 }
 /*-------------------------------------------------------------------------------------
                                     FIN Breakpoint tablette
