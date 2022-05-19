@@ -185,13 +185,14 @@
         }
     }
 }
+
 .heart {
     color: darken($gray, 30%);
     font-size: 30px;
     cursor: pointer;
 
     &:hover, :active {
-        opacity: 1;
+        animation: heart 1s;
         background: $gradient;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -199,6 +200,14 @@
     }
 }
 
+@keyframes heart {
+    0% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 /*-------------------------------------------------------------------------------------
                                     Breakpoint desktop
 -------------------------------------------------------------------------------------*/
@@ -217,7 +226,7 @@
             }
         }
     }
-    
+
     .working {
         flex-direction: row;
         flex-wrap: wrap;

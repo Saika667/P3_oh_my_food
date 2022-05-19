@@ -240,11 +240,20 @@ hr {
 }
 
 .heart:hover, .heart :active {
-  opacity: 1;
+  animation: heart 1s;
   background: linear-gradient(-7deg, #9356DC 4%, #FF79DA 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+}
+
+@keyframes heart {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /*-------------------------------------------------------------------------------------
@@ -434,6 +443,12 @@ hr {
   box-shadow: 0 5px 9px 3px rgba(0, 0, 0, 0.15);
   overflow: hidden;
   display: flex;
+  position: relative;
+  animation: opacity 2s;
+}
+
+.proposal-hover {
+  width: 100%;
 }
 
 .proposal-description {
@@ -455,6 +470,7 @@ hr {
 
 .proposal-price span {
   font-weight: bold;
+  transition-duration: 500ms;
 }
 
 .proposal-price p {
@@ -463,33 +479,48 @@ hr {
   white-space: nowrap;
 }
 
-.proposal-hover {
-  width: 100%;
+/*ajout délai pour chaque proposal, les uns après les autres
+- 0.5s pour que le premier élément n'est pas de délai*/
+.proposal:nth-child(1) {
+  animation-delay: 0s;
 }
 
-.proposal-hover:hover + .check-animation {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80px;
-  height: 80px;
-  margin: -12px -24px 0 0;
-  border-radius: 0 20px 20px 0;
-  animation: check 2s;
+.proposal:nth-child(2) {
+  animation-delay: 0.5s;
 }
 
-.proposal-hover:hover span {
-  animation: check 2s;
-  margin-right: 10px;
+.proposal:nth-child(3) {
+  animation-delay: 1s;
 }
 
-@keyframes check {
+.proposal:nth-child(4) {
+  animation-delay: 1.5s;
+}
+
+@keyframes opacity {
   0% {
-    transform: translateX(80px);
+    opacity: 0;
+    transform: translateY(20px);
   }
   100% {
-    transform: translateX(0);
+    opacity: 1;
+    transform: translateY(0);
   }
+}
+
+.proposal:hover .check-animation {
+  width: 80px;
+  height: 80px;
+  border-radius: 0 20px 20px 0;
+  right: 0;
+}
+
+.proposal:hover .check-animation i {
+  transform: rotate(360deg);
+}
+
+.proposal:hover span {
+  margin-right: 70px;
 }
 
 .starter {
@@ -501,19 +532,12 @@ hr {
   margin: 0 0 0 3%;
 }
 
-.dishes {
-  background-color: #F2F2F2;
-}
-
-.dishes-title {
-  text-transform: uppercase;
-  margin: 13% 0 0 3%;
-}
-
+.dishes,
 .desserts {
   background-color: #F2F2F2;
 }
 
+.dishes-title,
 .desserts-title {
   text-transform: uppercase;
   margin: 13% 0 0 3%;
@@ -527,12 +551,23 @@ hr {
 
 .check-animation {
   background-color: #99E2D0;
-  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  margin: -12px 0 0 0;
+  border-radius: 0 20px 20px 0;
+  position: absolute;
+  right: -80px;
+  transition-duration: 750ms;
 }
 
 .check-animation i {
   color: white;
   font-size: 20px;
+  transition: transform 500ms 250ms;
+  transform: rotate(0deg);
 }
 
 /*-------------------------------------------------------------------------------------
