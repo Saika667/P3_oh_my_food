@@ -56,19 +56,25 @@ hr {
   background-color: #e5e5e5;
 }
 
-.search-location-container-icon {
-  width: 15%;
+.search-location-container {
+  width: 300px;
   display: flex;
-  justify-content: end;
 }
 
-.search-location input {
+.search-location-container-icon {
+  width: 100px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.search-location-container input {
   margin: 5% 0;
   border: none;
   background: initial;
   font-size: 16px;
   font-weight: 600;
-  width: 50%;
+  width: 200px;
   padding-left: 4%;
 }
 
@@ -138,7 +144,7 @@ hr {
 
 .working-proposal-description-container-icon {
   display: flex;
-  width: 30%;
+  width: 60px;
   align-items: center;
   justify-content: center;
   height: 100%;
@@ -146,6 +152,7 @@ hr {
 
 .working-proposal-description-container-icon i {
   color: #a6a6a6;
+  padding-left: 10px;
 }
 
 .working-proposal-description h2 {
@@ -244,17 +251,66 @@ hr {
                                     Breakpoint desktop
 -------------------------------------------------------------------------------------*/
 @media all and (min-width: 1301px) {
+  .search-description h1 {
+    margin: 2% auto;
+  }
+  .search-description-container-button {
+    width: 40%;
+    padding: 3%;
+  }
   .working {
     flex-direction: row;
     flex-wrap: wrap;
     margin: 5% 0;
   }
   .working-title {
-    margin-bottom: 2%;
+    margin-left: 5%;
+    margin-bottom: 3%;
   }
   .working-proposal {
     width: 30%;
     margin: auto;
+  }
+  .restaurant {
+    flex-direction: initial;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 5% 0 3% 0;
+  }
+  .restaurant-ad {
+    width: 22%;
+  }
+  .restaurant-ad img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 180px;
+  }
+  .restaurant-ad-new {
+    position: absolute;
+    background-color: #99E2D0;
+    color: #278870;
+    padding: 2% 3%;
+    right: 7%;
+    top: 6%;
+  }
+  .restaurant-ad-description {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+  }
+  .restaurant-ad-description h2 {
+    white-space: nowrap;
+    margin: 7% 0 2% 7%;
+  }
+  .restaurant-ad-description p {
+    margin: 3% 0 0 7%;
+  }
+  .restaurant-ad-description-container-icon {
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -265,6 +321,13 @@ hr {
                                     Breakpoint tablette
 -------------------------------------------------------------------------------------*/
 @media all and (min-width: 769px) and (max-width: 1300px) {
+  .search-description h1 {
+    margin: 2% auto;
+  }
+  .search-description-container-button {
+    width: 40%;
+    padding: 3%;
+  }
   .working {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -285,8 +348,17 @@ hr {
     grid-row: 4;
     grid-column: 3 / 3;
   }
+  .working-proposal-description h2 {
+    font-size: 12px;
+  }
+  .restaurant {
+    flex-direction: initial;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 5% 0;
+  }
   .restaurant-ad {
-    width: 80%;
+    width: 45%;
     height: 360px;
   }
   .restaurant-ad img {
@@ -304,6 +376,9 @@ hr {
 .main img {
   width: 100%;
   position: relative;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .menu {
@@ -357,6 +432,8 @@ hr {
   padding: 12px 24px 12px 12px;
   margin: 0 auto 15px auto;
   box-shadow: 0 5px 9px 3px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  display: flex;
 }
 
 .proposal-description {
@@ -384,6 +461,35 @@ hr {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+}
+
+.proposal-hover {
+  width: 100%;
+}
+
+.proposal-hover:hover + .check-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  margin: -12px -24px 0 0;
+  border-radius: 0 20px 20px 0;
+  animation: check 2s;
+}
+
+.proposal-hover:hover span {
+  animation: check 2s;
+  margin-right: 10px;
+}
+
+@keyframes check {
+  0% {
+    transform: translateX(80px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .starter {
@@ -420,7 +526,13 @@ hr {
 }
 
 .check-animation {
+  background-color: #99E2D0;
   display: none;
+}
+
+.check-animation i {
+  color: white;
+  font-size: 20px;
 }
 
 /*-------------------------------------------------------------------------------------
@@ -428,7 +540,11 @@ hr {
 -------------------------------------------------------------------------------------*/
 @media all and (min-width: 1301px) {
   hr {
-    margin: 2% 0;
+    margin: 4% 0;
+  }
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
   }
   .menu-title {
     width: 90%;
@@ -437,15 +553,15 @@ hr {
   .dishes,
   .desserts {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-between;
-    width: 90%;
+    width: 30%;
     margin: auto;
   }
   .starter-title,
   .dishes-title,
   .desserts-title {
-    width: 100%;
+    width: 90%;
     font-size: 37px;
   }
   .starter-title {
@@ -458,11 +574,11 @@ hr {
     margin: 4% 0 0 0;
   }
   .proposal {
-    width: 30%;
+    width: 100%;
   }
   .button-command-container {
     width: 40%;
-    padding: 10% 0 12% 0;
+    padding: 4% 0;
   }
 }
 
@@ -508,8 +624,8 @@ hr {
     margin: 0 0 3% 0;
   }
   .button-command-container {
-    width: 50%;
-    padding: 6% 0 7% 0;
+    width: 40%;
+    padding: 4% 0;
   }
 }
 
@@ -596,7 +712,7 @@ footer > div a {
 -------------------------------------------------------------------------------------*/
 @media all and (min-width: 1301px) {
   header {
-    width: 80%;
+    width: 30%;
     margin: auto;
   }
 }
@@ -609,7 +725,7 @@ footer > div a {
 -------------------------------------------------------------------------------------*/
 @media all and (min-width: 769px) and (max-width: 1300px) {
   header {
-    width: 80%;
+    width: 30%;
     margin: auto;
   }
 }
@@ -652,7 +768,7 @@ footer > div a {
 -------------------------------------------------------------------------------------*/
 @media all and (min-width: 1301px) {
   #button-back {
-    left: 30px;
+    left: 0;
   }
   #button-back i {
     font-size: 40px;

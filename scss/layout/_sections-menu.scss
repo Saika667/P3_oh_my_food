@@ -4,6 +4,9 @@
     img {
         width: 100%;
         position: relative;
+        height: 400px;
+        object-fit: cover;
+        object-position: center;
     }
 }
 .menu {
@@ -59,6 +62,8 @@
     padding: 12px 24px 12px 12px;
     margin: 0 auto 15px auto;
     box-shadow: 0 5px 9px 3px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    display: flex;
 
     &-description {
         margin-bottom: 8px;
@@ -85,6 +90,37 @@
             overflow: hidden;
             white-space: nowrap; 
         }
+    }
+}
+
+.proposal-hover {
+    width: 100%;
+
+    &:hover {
+        & + .check-animation {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height: 80px;
+            margin: -12px -24px 0 0;
+            border-radius: 0 20px 20px 0;
+            animation: check 2s;    
+        }
+
+        span {
+            animation: check 2s;
+            margin-right: 10px;
+        }
+    }
+}
+
+@keyframes check {
+0% {
+    transform: translateX(80px);
+}
+100% {
+    transform: translateX(0);
     }
 }
 
@@ -153,7 +189,13 @@
 }
 
 .check-animation {
+    background-color: $third-color;
     display: none;
+
+    i {
+        color: white;
+        font-size: 20px;
+    }
 }
 
 /*-------------------------------------------------------------------------------------
@@ -161,24 +203,29 @@
 -------------------------------------------------------------------------------------*/
 @media all and (min-width: 1301px) {
     hr {
-        margin: 2% 0;
+        margin: 4% 0;
     }
 
-    .menu-title {
-        width: 90%;
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+
+        &-title {
+            width: 90%;
+        }
     }
 
     .starter,
     .dishes,
     .desserts {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: space-between;
-        width: 90%;
+        width: 30%;
         margin: auto;
 
         &-title {
-            width: 100%;
+            width: 90%;
             font-size: 37px;
         }
     }
@@ -196,12 +243,12 @@
     }
 
     .proposal {
-        width: 30%;
+        width: 100%;
     }
 
     .button-command-container {
         width: 40%;
-        padding: 10% 0 12% 0;
+        padding: 4% 0;
     }
 }
 /*-------------------------------------------------------------------------------------
@@ -253,8 +300,8 @@
     }
 
     .button-command-container {
-        width: 50%;
-        padding: 6% 0 7% 0;
+        width: 40%;
+        padding: 4% 0;
     }
 }
 /*-------------------------------------------------------------------------------------

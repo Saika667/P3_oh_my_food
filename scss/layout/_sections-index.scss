@@ -7,20 +7,26 @@
         align-items: baseline;
         background-color: darken($gray, 5%);
 
-        &-container-icon {
-            width: 15%;
+        &-container {
+            width: 300px;
             display: flex;
-            justify-content: end;
-        }
 
-        input {
-            margin: 5% 0;
-            border: none;
-            background: initial;
-            font-size: 16px;
-            font-weight: 600;
-            width: 50%;
-            padding-left: 4%;
+            &-icon {
+                width: 100px;
+                display: flex;
+                justify-content: end;
+                align-items: center;
+            }
+
+            input {
+                margin: 5% 0;
+                border: none;
+                background: initial;
+                font-size: 16px;
+                font-weight: 600;
+                width: 200px;
+                padding-left: 4%;
+            }
         }
     }
 
@@ -89,13 +95,14 @@
 
             &-container-icon {
                 display: flex;
-                width: 30%;
+                width: 60px;
                 align-items: center;
                 justify-content: center;
                 height: 100%;
 
                 i {
                     color: darken($gray, 30%);
+                    padding-left: 10px;
                 }
             }
 
@@ -196,18 +203,83 @@
                                     Breakpoint desktop
 -------------------------------------------------------------------------------------*/
 @media all and (min-width: 1301px) {
+    .search {
+    
+        &-description {
+    
+            h1 {
+                margin: 2% auto;
+            }
+    
+            &-container-button {
+                width: 40%;
+                padding: 3%;
+            }
+        }
+    }
+    
     .working {
         flex-direction: row;
         flex-wrap: wrap;
         margin: 5% 0;
 
         &-title {
-            margin-bottom: 2%;
+            margin-left: 5%;
+            margin-bottom: 3%;
         }
 
         &-proposal {
             width: 30%;
             margin: auto;
+        }
+    }
+
+    .restaurant {
+        flex-direction: initial;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 5% 0 3% 0;
+    
+        &-ad {
+            width: 22%;
+    
+            img {
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+                height: 180px;
+            }
+    
+            &-new {
+                position: absolute;
+                background-color: $third-color;
+                color: darken($third-color, 40%);
+                padding: 2% 3%;
+                right: 7%;
+                top: 6%;
+            }
+    
+            &-description {
+                display: flex;
+                justify-content: space-between;
+                height: 70px;
+    
+                h2 {
+                    white-space: nowrap;
+                    margin: 7% 0 2% 7%;
+                }
+    
+                p {
+                    margin: 3% 0 0 7%;
+                }
+    
+                &-container-icon {
+                    width: 70px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
         }
     }
 }
@@ -219,6 +291,21 @@
                                     Breakpoint tablette
 -------------------------------------------------------------------------------------*/
 @media all and (min-width: 769px) and (max-width: 1300px) {
+    .search {
+    
+        &-description {
+    
+            h1 {
+                margin: 2% auto;
+            }
+    
+            &-container-button {
+                width: 40%;
+                padding: 3%;
+            }
+        }
+    }
+
     .working {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -242,17 +329,35 @@
             grid-row: 4;
             grid-column: 3 / 3;
         }
+
+        &-proposal {
+            &-description {
+
+                h2 {
+                    font-size: 12px;
+                }
+
+                &-container-icon {
+                    
+                }
+            }
+        }
     }
 
     .restaurant {
-    
+        flex-direction: initial;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 5% 0;
+
         &-title {
 
         }
     
         &-ad {
-            width: 80%;
+            width: 45%;
             height: 360px;
+
             img {
                 height: 280px;
             }
