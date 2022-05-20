@@ -9,6 +9,7 @@
         object-position: center;
     }
 }
+
 .menu {
     width: 100%;
     background-color: $gray;
@@ -63,9 +64,8 @@
     margin: 0 auto 15px auto;
     box-shadow: 0 5px 9px 3px rgba(0, 0, 0, 0.15);
     overflow: hidden;
-    display: flex;
     position: relative;
-    animation: opacity 2s;
+    animation: appearance 1s backwards;
 
     &-hover {
         width: 100%;
@@ -100,15 +100,18 @@
     }
 }
 
+/*-------------------------------------------------------------------------------------
+                                    Animation
+-------------------------------------------------------------------------------------*/
 /*ajout délai pour chaque proposal, les uns après les autres
-- 0.5s pour que le premier élément n'est pas de délai*/
+- 0.15s pour que le premier élément n'est pas de délai*/
 @for $i from 1 through $totalChildren {
     .proposal:nth-child(#{$i}) {
-        animation-delay: $i * 0.5s - 0.5s;
+        animation-delay: $i * 0.15s - 0.15s;
     }
 }
 
-@keyframes opacity {
+@keyframes appearance {
     0% {
         opacity: 0;
         transform: translateY(20px);
@@ -119,7 +122,22 @@
     }
 }
 
+@keyframes appearanceDesktopTablet {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+/*-------------------------------------------------------------------------------------
+                                    FIN Animation
+-------------------------------------------------------------------------------------*/
+
 .proposal:hover {
+
     .check-animation {
         width: 80px;
         height: 80px;
@@ -172,6 +190,7 @@
     border-radius: 0 20px 20px 0;
     position: absolute;
     right: -80px;
+    top: 12px;
     transition-duration: 750ms;
 
     i {
@@ -228,6 +247,7 @@
 
     .proposal {
         width: 100%;
+        animation: appearanceDesktopTablet 1s backwards;
     }
 
     .button-command-container {
@@ -281,6 +301,7 @@
     .proposal {
         width: 45%;
         margin: 0 0 3% 0;
+        animation: appearanceDesktopTablet 1s backwards;
     }
 
     .button-command-container {

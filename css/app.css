@@ -442,9 +442,8 @@ hr {
   margin: 0 auto 15px auto;
   box-shadow: 0 5px 9px 3px rgba(0, 0, 0, 0.15);
   overflow: hidden;
-  display: flex;
   position: relative;
-  animation: opacity 2s;
+  animation: appearance 1s backwards;
 }
 
 .proposal-hover {
@@ -479,25 +478,28 @@ hr {
   white-space: nowrap;
 }
 
+/*-------------------------------------------------------------------------------------
+                                    Animation
+-------------------------------------------------------------------------------------*/
 /*ajout délai pour chaque proposal, les uns après les autres
-- 0.5s pour que le premier élément n'est pas de délai*/
+- 0.15s pour que le premier élément n'est pas de délai*/
 .proposal:nth-child(1) {
   animation-delay: 0s;
 }
 
 .proposal:nth-child(2) {
-  animation-delay: 0.5s;
+  animation-delay: 0.15s;
 }
 
 .proposal:nth-child(3) {
-  animation-delay: 1s;
+  animation-delay: 0.3s;
 }
 
 .proposal:nth-child(4) {
-  animation-delay: 1.5s;
+  animation-delay: 0.45s;
 }
 
-@keyframes opacity {
+@keyframes appearance {
   0% {
     opacity: 0;
     transform: translateY(20px);
@@ -508,6 +510,20 @@ hr {
   }
 }
 
+@keyframes appearanceDesktopTablet {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/*-------------------------------------------------------------------------------------
+                                    FIN Animation
+-------------------------------------------------------------------------------------*/
 .proposal:hover .check-animation {
   width: 80px;
   height: 80px;
@@ -560,6 +576,7 @@ hr {
   border-radius: 0 20px 20px 0;
   position: absolute;
   right: -80px;
+  top: 12px;
   transition-duration: 750ms;
 }
 
@@ -610,6 +627,7 @@ hr {
   }
   .proposal {
     width: 100%;
+    animation: appearanceDesktopTablet 1s backwards;
   }
   .button-command-container {
     width: 40%;
@@ -657,6 +675,7 @@ hr {
   .proposal {
     width: 45%;
     margin: 0 0 3% 0;
+    animation: appearanceDesktopTablet 1s backwards;
   }
   .button-command-container {
     width: 40%;
