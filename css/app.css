@@ -35,7 +35,7 @@ hr {
 /*-------------------------------------------------------------------------------------
                                     Breakpoint desktop (grand écran)
 -------------------------------------------------------------------------------------*/
-@media all and (min-width: 1920px) {
+@media all and (min-width: 1301px) {
   body > * {
     max-width: 1920px;
     margin: 0 auto;
@@ -45,6 +45,421 @@ hr {
 /*-------------------------------------------------------------------------------------
                                     FIN Breakpoint desktop (grand écran)
 -------------------------------------------------------------------------------------*/
+#loader-animation {
+  visibility: hidden;
+  background-color: white;
+  animation: showAndHide 3s;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+/* --------------------------------------------------------
+                    Marmitte
+---------------------------------------------------------*/
+#cookingPot {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+  width: 100%;
+  height: 500px;
+  margin: auto;
+  position: relative;
+}
+
+#lid {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  animation: lid-movement 2.5s;
+}
+
+#potWrist {
+  background-color: #278870;
+  border-radius: 6px 6px 0 0;
+  width: 40px;
+  height: 10px;
+  margin-bottom: -2px;
+}
+
+#cookingPotLid {
+  border: 2px solid #71d7be;
+  border-top: none;
+  border-radius: 50% 50% 0 0;
+  width: 180px;
+  height: 20px;
+  margin-bottom: -2px;
+  background-color: #99E2D0;
+}
+
+#cookingPotBody {
+  border-top: 2px solid #71d7be;
+  border-radius: 0 0 15px 15px;
+  width: 180px;
+  height: 160px;
+  position: relative;
+  z-index: 1;
+  background-color: #99E2D0;
+}
+
+#cookingPotBodyReflection {
+  background-color: #c1ede2;
+  border-radius: 0 0 15px 0;
+  width: 40px;
+  height: 160px;
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+}
+
+#cookingPotBodyReflectionBis {
+  background-color: #c1ede2;
+  width: 20px;
+  height: 160px;
+  position: absolute;
+  right: 75px;
+  bottom: 0;
+}
+
+#potWristRight {
+  background-color: #278870;
+  border-radius: 0 50% 0 0;
+  width: 25px;
+  height: 7px;
+  position: absolute;
+  right: -15px;
+  bottom: 129px;
+  z-index: 1;
+}
+
+#potWristLeft {
+  background-color: #278870;
+  border-radius: 50% 0 0 0;
+  width: 25px;
+  height: 7px;
+  position: absolute;
+  left: -15px;
+  bottom: 129px;
+  z-index: 1;
+}
+
+/* --------------------------------------------------------
+                    FIN Marmitte
+---------------------------------------------------------*/
+/* --------------------------------------------------------
+                    Fumée
+---------------------------------------------------------*/
+.smoke:nth-child(odd) {
+  animation: smoke-right 2.8s linear;
+}
+
+.smoke:nth-child(even) {
+  animation: smoke-left 2.8s linear;
+}
+
+.pink {
+  background-color: #FF79DA;
+}
+
+.purple {
+  background-color: #9356DC;
+}
+
+.smoke {
+  border-radius: 50%;
+  position: absolute;
+}
+
+.smoke.smoke-1 {
+  height: 50px;
+  width: 50px;
+  bottom: 111px;
+}
+
+.smoke.smoke-2 {
+  height: 70px;
+  width: 70px;
+  bottom: 87px;
+}
+
+.smoke.smoke-3 {
+  height: 80px;
+  width: 80px;
+  bottom: 66px;
+}
+
+/* --------------------------------------------------------
+                    FIN Fumée
+---------------------------------------------------------*/
+/* --------------------------------------------------------
+                    Texte
+---------------------------------------------------------*/
+#titleOhMyFood {
+  font-family: 'Shrikhand', sans-serif;
+  font-size: 33px;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+#titleOhMyFood span {
+  display: inline-block;
+  animation: anim-text 600ms cubic-bezier(0.165, 0.44, 0.64, 1), color-text 1s cubic-bezier(0.165, 0.44, 0.64, 1);
+  animation-iteration-count: 5, 3;
+}
+
+/* --------------------------------------------------------
+                    FIN Texte
+---------------------------------------------------------*/
+/* --------------------------------------------------------
+                    Animation loader
+---------------------------------------------------------*/
+@keyframes showAndHide {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  98% {
+    opacity: 0.5;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+/* --------------------------------------------------------
+                    FIN Animation loader
+---------------------------------------------------------*/
+/* --------------------------------------------------------
+                    Animation Texte
+---------------------------------------------------------*/
+#titleOhMyFood span:nth-child(1) {
+  animation-delay: 0.05s;
+}
+
+#titleOhMyFood span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+#titleOhMyFood span:nth-child(3) {
+  animation-delay: 0.15s;
+}
+
+#titleOhMyFood span:nth-child(4) {
+  animation-delay: 0.2s;
+}
+
+#titleOhMyFood span:nth-child(5) {
+  animation-delay: 0.25s;
+}
+
+#titleOhMyFood span:nth-child(6) {
+  animation-delay: 0.3s;
+}
+
+#titleOhMyFood span:nth-child(7) {
+  animation-delay: 0.35s;
+}
+
+#titleOhMyFood span:nth-child(8) {
+  animation-delay: 0.4s;
+}
+
+@keyframes anim-text {
+  0% {
+    transform: rotateY(-35deg);
+  }
+  25% {
+    transform: translateY(3px) rotateY(35deg);
+  }
+  50% {
+    transform: rotateY(-35deg);
+  }
+  75% {
+    transform: translateY(6px) rotateY(35deg);
+  }
+  100% {
+    transform: rotateY(-35deg);
+  }
+}
+
+@keyframes color-text {
+  0% {
+    color: #9356DC;
+  }
+  50% {
+    color: #FF79DA;
+  }
+  100% {
+    color: #99E2D0;
+  }
+}
+
+/* --------------------------------------------------------
+                    FIN Animation Texte
+---------------------------------------------------------*/
+/* --------------------------------------------------------
+                    Animation fumée
+---------------------------------------------------------*/
+.smoke:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.smoke:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.smoke:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.smoke:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+.smoke:nth-child(5) {
+  animation-delay: 1s;
+}
+
+.smoke:nth-child(6) {
+  animation-delay: 1.2s;
+}
+
+.smoke:nth-child(7) {
+  animation-delay: 1.4s;
+}
+
+.smoke:nth-child(8) {
+  animation-delay: 1.6s;
+}
+
+.smoke:nth-child(9) {
+  animation-delay: 1.8s;
+}
+
+.smoke:nth-child(10) {
+  animation-delay: 2s;
+}
+
+.smoke:nth-child(11) {
+  animation-delay: 2.2s;
+}
+
+.smoke:nth-child(12) {
+  animation-delay: 2.4s;
+}
+
+@keyframes smoke-right {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+    filter: blur(5px);
+  }
+  100% {
+    transform: translate(100px, -500px) scale(3);
+    opacity: 0;
+    filter: blur(5px);
+  }
+}
+
+@keyframes smoke-left {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+    filter: blur(5px);
+  }
+  100% {
+    transform: translate(-100px, -500px) scale(3);
+    opacity: 0;
+    filter: blur(5px);
+  }
+}
+
+/* --------------------------------------------------------
+                    Animation fumée
+---------------------------------------------------------*/
+/* --------------------------------------------------------
+                    Animation couvercle 
+---------------------------------------------------------*/
+@keyframes lid-movement {
+  0% {
+    transform: skewY(-5deg) translateY(-10px);
+    transform-origin: left;
+    animation-timing-function: ease-in;
+  }
+  10% {
+    transform: skewY(0deg) translateY(0);
+    animation-timing-function: linear;
+  }
+  20% {
+    transform: skewY(5deg) translateY(-10px);
+    transform-origin: right;
+    animation-timing-function: ease-in;
+  }
+  30% {
+    transform: skewY(0deg) translateY(0);
+    animation-timing-function: linear;
+  }
+  40% {
+    transform: skewY(-15deg) translateY(-15px);
+    transform-origin: left;
+    animation-timing-function: ease-in;
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: linear;
+  }
+  60% {
+    transform: skewY(15deg) translateY(-15px);
+    transform-origin: right;
+    animation-timing-function: ease-in;
+  }
+  70% {
+    transform: translateY(0);
+    animation-timing-function: linear;
+  }
+  74% {
+    transform: skewY(-5deg) translateY(-10px);
+    animation-timing-function: ease-in;
+    transform-origin: center;
+  }
+  78% {
+    transform: skewY(10deg) translateY(-20px);
+    animation-timing-function: linear;
+  }
+  82% {
+    transform: skewY(-10deg) translateY(-30px);
+  }
+  86% {
+    transform: skewY(5deg) translateY(-35px);
+    animation-timing-function: ease-out;
+  }
+  90% {
+    transform: translateY(-25px) skewY(-10deg);
+    animation-timing-function: linear;
+  }
+  94% {
+    transform: skewY(5deg) translateY(-15px);
+  }
+  98% {
+    transform: translateY(-5px) skewY(-5deg);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* --------------------------------------------------------
+                    Animation couvercle 
+---------------------------------------------------------*/
 .search {
   background-color: #F2F2F2;
 }
