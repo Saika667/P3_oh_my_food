@@ -55,6 +55,9 @@ hr {
   top: 0;
   bottom: 0;
   z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* --------------------------------------------------------
@@ -627,25 +630,26 @@ hr {
 }
 
 .restaurant-ad-description {
-  display: flex;
-  justify-content: space-between;
   height: 70px;
 }
 
 .restaurant-ad-description h2 {
   white-space: nowrap;
-  margin: 7% 0 2% 7%;
+  margin: 1% 0 0 7%;
 }
 
 .restaurant-ad-description p {
-  margin: 3% 0 0 7%;
+  margin: 1% 0 0 7%;
 }
 
-.restaurant-ad-description-container-icon {
+.restaurant-ad-container-icon {
   width: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  right: 10px;
+  bottom: 20px;
 }
 
 .heart {
@@ -654,7 +658,7 @@ hr {
   cursor: pointer;
 }
 
-.heart:hover, .heart :active {
+.restaurant-ad-container-icon:hover i, .restaurant-ad-container-icon:active i, .restaurant-ad-container-icon:focus i {
   animation: heart 1s;
   background: linear-gradient(-7deg, #9356DC 4%, #FF79DA 100%);
   -webkit-background-clip: text;
@@ -679,20 +683,20 @@ hr {
     margin: 2% auto;
   }
   .search-description-container-button {
-    width: 40%;
+    width: 30%;
     padding: 3%;
   }
   .working {
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 5% 0;
+    margin: 3% 0;
   }
   .working-title {
     margin-left: 5%;
     margin-bottom: 3%;
   }
   .working-proposal {
-    width: 30%;
+    width: 25%;
     margin: auto;
   }
   .restaurant {
@@ -719,18 +723,16 @@ hr {
     top: 6%;
   }
   .restaurant-ad-description {
-    display: flex;
-    justify-content: space-between;
     height: 70px;
   }
   .restaurant-ad-description h2 {
     white-space: nowrap;
-    margin: 7% 0 2% 7%;
+    margin: 3% 0 0% 7%;
   }
   .restaurant-ad-description p {
-    margin: 3% 0 0 7%;
+    margin: 1% 0 0 7%;
   }
-  .restaurant-ad-description-container-icon {
+  .restaurant-ad-container-icon {
     width: 70px;
     display: flex;
     justify-content: center;
@@ -753,24 +755,17 @@ hr {
     padding: 3%;
   }
   .working {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 5px;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin: 5% 0;
   }
-  .working > div {
-    margin: 0 auto 5% auto;
+  .working-title {
+    margin-left: 5%;
+    margin-bottom: 3%;
   }
-  .working :nth-child(2) {
-    grid-row: 2;
-  }
-  .working :nth-child(3) {
-    grid-row: 3;
-    grid-column: 2 / 3;
-  }
-  .working :last-child {
-    grid-row: 4;
-    grid-column: 3 / 3;
+  .working-proposal {
+    width: 30%;
+    margin: auto;
   }
   .working-proposal-description h2 {
     font-size: 12px;
@@ -787,6 +782,9 @@ hr {
   }
   .restaurant-ad img {
     height: 280px;
+  }
+  .restaurant-ad-description h2 {
+    margin: 3% 0 1% 7%;
   }
 }
 
@@ -827,7 +825,7 @@ hr {
 }
 
 .menu-title h1 {
-  font-size: 40px;
+  font-size: 30px;
   letter-spacing: 2px;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -859,10 +857,6 @@ hr {
   overflow: hidden;
   position: relative;
   animation: appearance 1s backwards;
-}
-
-.proposal-hover {
-  width: 100%;
 }
 
 .proposal-description {
@@ -939,6 +933,10 @@ hr {
 /*-------------------------------------------------------------------------------------
                                     FIN Animation
 -------------------------------------------------------------------------------------*/
+.proposal:hover .proposal-description h2 {
+  margin-right: 60px;
+}
+
 .proposal:hover .check-animation {
   width: 80px;
   height: 80px;
@@ -1045,7 +1043,7 @@ hr {
     animation: appearanceDesktopTablet 1s backwards;
   }
   .button-command-container {
-    width: 40%;
+    width: 25%;
     padding: 4% 0;
   }
 }
@@ -1093,7 +1091,7 @@ hr {
     animation: appearanceDesktopTablet 1s backwards;
   }
   .button-command-container {
-    width: 40%;
+    width: 30%;
     padding: 4% 0;
   }
 }
@@ -1130,7 +1128,7 @@ footer > div a {
 }
 
 .footer-container-icon {
-  width: 7%;
+  width: 35px;
 }
 
 /*-------------------------------------------------------------------------------------
@@ -1139,9 +1137,6 @@ footer > div a {
 @media all and (min-width: 1301px) {
   footer > div {
     margin-bottom: 2%;
-  }
-  .footer-container-icon {
-    width: 4%;
   }
 }
 
@@ -1155,9 +1150,6 @@ footer > div a {
   footer > div {
     margin-bottom: 2%;
   }
-  .footer-container-icon {
-    width: 4%;
-  }
 }
 
 /*-------------------------------------------------------------------------------------
@@ -1165,7 +1157,7 @@ footer > div a {
 -------------------------------------------------------------------------------------*/
 #oh-my-food-logo {
   display: flex;
-  width: 60%;
+  width: 50%;
   margin: 5% auto;
 }
 
@@ -1181,8 +1173,12 @@ footer > div a {
 -------------------------------------------------------------------------------------*/
 @media all and (min-width: 1301px) {
   header {
-    width: 30%;
+    width: 100%;
     margin: auto;
+  }
+  #oh-my-food-logo {
+    width: 30%;
+    margin: 2% auto;
   }
 }
 
@@ -1194,8 +1190,12 @@ footer > div a {
 -------------------------------------------------------------------------------------*/
 @media all and (min-width: 769px) and (max-width: 1300px) {
   header {
-    width: 30%;
+    width: 100%;
     margin: auto;
+  }
+  #oh-my-food-logo {
+    width: 30%;
+    margin: 2% auto;
   }
 }
 
@@ -1236,9 +1236,6 @@ footer > div a {
                                     Breakpoint desktop
 -------------------------------------------------------------------------------------*/
 @media all and (min-width: 1301px) {
-  #button-back {
-    left: 0;
-  }
   #button-back i {
     font-size: 40px;
   }
@@ -1251,9 +1248,6 @@ footer > div a {
                                     Breakpoint tablette
 -------------------------------------------------------------------------------------*/
 @media all and (min-width: 769px) and (max-width: 1300px) {
-  #button-back {
-    left: 30px;
-  }
   #button-back i {
     font-size: 30px;
   }

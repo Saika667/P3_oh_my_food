@@ -1,6 +1,6 @@
 #oh-my-food-logo {
     display: flex;
-    width: 60%;
+    width: 50%;
     margin: 5% auto;
 }
 
@@ -16,9 +16,14 @@
 -------------------------------------------------------------------------------------*/
 @media all and (min-width: 1301px) {
     header {
-        width: 30%;
+        width: 100%;
         margin: auto;
     }  
+
+    #oh-my-food-logo {
+        width: 30%;
+        margin: 2% auto;
+    }
 }
 /*-------------------------------------------------------------------------------------
                                     FIN Breakpoint desktop
@@ -29,8 +34,13 @@
 -------------------------------------------------------------------------------------*/
 @media all and (min-width: 769px) and (max-width: 1300px) {
     header {
-        width: 30%;
+        width: 100%;
         margin: auto;
+    }
+
+    #oh-my-food-logo {
+        width: 30%;
+        margin: 2% auto;
     }
 }
 /*-------------------------------------------------------------------------------------

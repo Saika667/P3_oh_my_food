@@ -163,25 +163,26 @@
         }
 
         &-description {
-            display: flex;
-            justify-content: space-between;
             height: 70px;
 
             h2 {
                 white-space: nowrap;
-                margin: 7% 0 2% 7%;
+                margin: 1% 0 0 7%;
             }
 
             p {
-                margin: 3% 0 0 7%;
+                margin: 1% 0 0 7%;
             }
+        }
 
-            &-container-icon {
-                width: 70px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
+        &-container-icon {
+            width: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            right: 10px;
+            bottom: 20px;
         }
     }
 }
@@ -190,13 +191,17 @@
     color: darken($gray, 30%);
     font-size: 30px;
     cursor: pointer;
+}
 
-    &:hover, :active {
+.restaurant-ad-container-icon {
+    &:hover, &:active, &:focus {
+        i {
         animation: heart 1s;
         background: $gradient;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-weight: bold;
+        }
     }
 }
 
@@ -221,7 +226,7 @@
             }
     
             &-container-button {
-                width: 40%;
+                width: 30%;
                 padding: 3%;
             }
         }
@@ -230,7 +235,7 @@
     .working {
         flex-direction: row;
         flex-wrap: wrap;
-        margin: 5% 0;
+        margin: 3% 0;
 
         &-title {
             margin-left: 5%;
@@ -238,7 +243,7 @@
         }
 
         &-proposal {
-            width: 30%;
+            width: 25%;
             margin: auto;
         }
     }
@@ -269,25 +274,23 @@
             }
     
             &-description {
-                display: flex;
-                justify-content: space-between;
                 height: 70px;
     
                 h2 {
                     white-space: nowrap;
-                    margin: 7% 0 2% 7%;
+                    margin: 3% 0 0% 7%;
                 }
     
                 p {
-                    margin: 3% 0 0 7%;
+                    margin: 1% 0 0 7%;
                 }
-    
-                &-container-icon {
-                    width: 70px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
+            }
+
+            &-container-icon {
+                width: 70px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
         }
     }
@@ -316,38 +319,23 @@
     }
 
     .working {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 5px;
+        flex-direction: row;
+        flex-wrap: wrap;
         margin: 5% 0;
 
-        > div {
-            margin: 0 auto 5% auto;
-        }
-    
-        & :nth-child(2){
-            grid-row: 2;
-        }
-
-        & :nth-child(3) {
-            grid-row: 3;
-            grid-column: 2 / 3;
-        }
-
-        & :last-child {
-            grid-row: 4;
-            grid-column: 3 / 3;
+        &-title {
+            margin-left: 5%;
+            margin-bottom: 3%;
         }
 
         &-proposal {
+            width: 30%;
+            margin: auto;
+
             &-description {
 
                 h2 {
                     font-size: 12px;
-                }
-
-                &-container-icon {
-                    
                 }
             }
         }
@@ -369,6 +357,12 @@
 
             img {
                 height: 280px;
+            }
+
+            &-description {
+                h2 {
+                    margin: 3% 0 1% 7%;
+                }
             }
         }
     }

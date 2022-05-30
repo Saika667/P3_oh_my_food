@@ -32,7 +32,7 @@
         
 
         h1 {
-            font-size: 40px;
+            font-size: 30px;
             letter-spacing: 2px;
             text-overflow: ellipsis;
             overflow: hidden;
@@ -66,10 +66,6 @@
     overflow: hidden;
     position: relative;
     animation: appearance 1s backwards;
-
-    &-hover {
-        width: 100%;
-    }
 
     &-description {
         margin-bottom: 8px;
@@ -138,6 +134,10 @@
 
 .proposal:hover {
 
+    .proposal-description h2 {
+        margin-right: 60px;
+    }
+    
     .check-animation {
         width: 80px;
         height: 80px;
@@ -251,7 +251,7 @@
     }
 
     .button-command-container {
-        width: 40%;
+        width: 25%;
         padding: 4% 0;
     }
 }
@@ -305,7 +305,7 @@
     }
 
     .button-command-container {
-        width: 40%;
+        width: 30%;
         padding: 4% 0;
     }
 }

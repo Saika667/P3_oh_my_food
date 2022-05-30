@@ -8,54 +8,56 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Shrikhand&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        <link rel="stylesheet" href="../css/app.css">
+        <link rel="stylesheet" href="css/app.css">
     </head>
     
 	<body>
         <div id="loader-animation">
-            <div id="cookingPot">
-                <div id="lid">
-                    <div id="potWrist"></div>
-                    <div id="cookingPotLid"></div>
+            <div id="loader-animation-container">
+                <div id="cookingPot">
+                    <div id="lid">
+                        <div id="potWrist"></div>
+                        <div id="cookingPotLid"></div>
+                    </div>
+        
+                    <div class="smoke smoke-1 pink"></div>
+                    <div class="smoke smoke-1 purple"></div>
+                    <div class="smoke smoke-2 pink"></div>
+                    <div class="smoke smoke-3 purple"></div>
+        
+                    <div class="smoke smoke-1 pink"></div>
+                    <div class="smoke smoke-2 purple"></div>
+                    <div class="smoke smoke-2 pink"></div>
+                    <div class="smoke smoke-3 purple"></div>
+        
+                    <div class="smoke smoke-1 pink"></div>
+                    <div class="smoke smoke-2 purple"></div>
+                    <div class="smoke smoke-3 pink"></div>
+                    <div class="smoke smoke-3 purple"></div>
+        
+                    <div id="cookingPotBody">
+                        <div id="potWristRight"></div>
+                        <div id="potWristLeft"></div>
+                        <div id="cookingPotBodyReflection"></div>
+                        <div id="cookingPotBodyReflectionBis"></div>
+                    </div>
                 </div>
-    
-                <div class="smoke smoke-1 pink"></div>
-                <div class="smoke smoke-1 purple"></div>
-                <div class="smoke smoke-2 pink"></div>
-                <div class="smoke smoke-3 purple"></div>
-    
-                <div class="smoke smoke-1 pink"></div>
-                <div class="smoke smoke-2 purple"></div>
-                <div class="smoke smoke-2 pink"></div>
-                <div class="smoke smoke-3 purple"></div>
-    
-                <div class="smoke smoke-1 pink"></div>
-                <div class="smoke smoke-2 purple"></div>
-                <div class="smoke smoke-3 pink"></div>
-                <div class="smoke smoke-3 purple"></div>
-    
-                <div id="cookingPotBody">
-                    <div id="potWristRight"></div>
-                    <div id="potWristLeft"></div>
-                    <div id="cookingPotBodyReflection"></div>
-                    <div id="cookingPotBodyReflectionBis"></div>
+        
+                <div id="titleOhMyFood">
+                    <span>O</span>
+                    <span>h</span>
+                    <span>m</span>
+                    <span>y</span>
+                    <span>f</span>
+                    <span>o</span>
+                    <span>o</span>
+                    <span>d</span>
                 </div>
-            </div>
-    
-            <div id="titleOhMyFood">
-                <span>O</span>
-                <span>h</span>
-                <span>m</span>
-                <span>y</span>
-                <span>f</span>
-                <span>o</span>
-                <span>o</span>
-                <span>d</span>
             </div>
         </div>
 
         <header>
-            <img src="../images/ohmyfood.png" id="oh-my-food-logo" alt="logo-oh-my-food"/>
+            <img src="images/ohmyfood.png" id="oh-my-food-logo" alt="logo-oh-my-food"/>
         </header>
 
         <main>
@@ -133,73 +135,73 @@
                     <h1>Restaurants</h1>
                 </div>
 
-                <a href="la-palette-du-gout.html" class="restaurant-ad">
-                    <img src="../images/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo-la-palette-du-gout"/>
-                        
-                    <div class="restaurant-ad-new">
-                        <span>Nouveau</span>
-                    </div>
+                <article class="restaurant-ad">
+                    <a href="la-palette-du-gout.html" >
+                        <img src="images/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo-la-palette-du-gout"/>
+                            
+                        <div class="restaurant-ad-new">
+                            <span>Nouveau</span>
+                        </div>
 
-                    <div class="restaurant-ad-description">
-                        <div>
+                        <div class="restaurant-ad-description">
                             <h2>La palette du goût</h2>
                             <p>Ménilmontant</p>
                         </div>
+                    </a>
 
-                        <div class="restaurant-ad-description-container-icon">
-                            <i class="far fa-heart heart"></i>
+                    <a class="restaurant-ad-container-icon" href="#dontmove">
+                        <i class="far fa-heart heart"></i>
+                    </a>
+                </article>
+
+                <article class="restaurant-ad">
+                    <a href="la-note-enchantee.html">
+                        <img src="images/stil-u2Lp8tXIcjw-unsplash.jpg" alt="photo-la-note-enchantee"/>
+                            
+                        <div class="restaurant-ad-new">
+                            <span>Nouveau</span>
                         </div>
-                    </div>
-                </a>
 
-                <a href="la-note-enchantee.html" class="restaurant-ad">
-                    <img src="../images/stil-u2Lp8tXIcjw-unsplash.jpg" alt="photo-la-note-enchantee"/>
-                        
-                    <div class="restaurant-ad-new">
-                        <span>Nouveau</span>
-                    </div>
-
-                    <div class="restaurant-ad-description">
-                        <div>
+                        <div class="restaurant-ad-description">
                             <h2>La note enchantée</h2>
                             <p>Charonne</p>
-                        </div>
+                        </div> 
+                    </a>
 
-                        <div class="restaurant-ad-description-container-icon">
-                            <i class="far fa-heart heart"></i>
-                        </div>
-                    </div> 
-                </a>
+                    <a class="restaurant-ad-container-icon" href="#dontmove">
+                        <i class="far fa-heart heart"></i>
+                    </a>
+                </article>
 
-                <a href="a-la-francaise.html" class="restaurant-ad">
-                    <img src="../images/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo-a-la-française"/>
-                    
-                    <div class="restaurant-ad-description">
-                        <div>
+                <article class="restaurant-ad">
+                    <a href="a-la-francaise.html">
+                        <img src="images/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo-a-la-française"/>
+                        
+                        <div class="restaurant-ad-description">
                             <h2>À la française</h2>
                             <p>Cité Rouge</p>
                         </div>
+                    </a>
 
-                        <div class="restaurant-ad-description-container-icon">
-                            <i class="far fa-heart heart"></i>
-                        </div>
-                    </div>
-                </a>
+                    <a class="restaurant-ad-container-icon" href="#dontmove">
+                        <i class="far fa-heart heart"></i>
+                    </a>
+                </article>
 
-                <a href="le-delice-des-sens.html" class="restaurant-ad">
-                    <img src="../images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="photo-le-delice-des-sens"/>
-                    
-                    <div class="restaurant-ad-description">
-                        <div>
+                <article class="restaurant-ad">
+                    <a href="le-delice-des-sens.html">
+                        <img src="images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="photo-le-delice-des-sens"/>
+                        
+                        <div class="restaurant-ad-description">
                             <h2>Le délice des sens</h2>
                             <p>Folie-Méricourt</p>
                         </div>
+                    </a>
 
-                        <div class="restaurant-ad-description-container-icon">
-                            <i class="far fa-heart heart"></i>
-                        </div>
-                    </div>
-                </a>
+                    <a class="restaurant-ad-container-icon" href="#dontmove">
+                        <i class="far fa-heart heart"></i>
+                    </a>
+                </article>
             </section>
         </main>
 
