@@ -5,8 +5,10 @@
         width: 100%;
         position: relative;
         height: 400px;
-        object-fit: cover;
-        object-position: center;
+        -o-object-fit: cover;
+           object-fit: cover;
+        -o-object-position: center;
+           object-position: center;
     }
 }
 
@@ -65,7 +67,8 @@
     box-shadow: 0 5px 9px 3px rgba(0, 0, 0, 0.15);
     overflow: hidden;
     position: relative;
-    animation: appearance 1s backwards;
+    -webkit-animation: appearance 1s backwards;
+            animation: appearance 1s backwards;
 
     &-description {
         margin-bottom: 8px;
@@ -103,7 +106,19 @@
 - 0.15s pour que le premier élément n'est pas de délai*/
 @for $i from 1 through $totalChildren {
     .proposal:nth-child(#{$i}) {
-        animation-delay: $i * 0.15s - 0.15s;
+        -webkit-animation-delay: $i * 0.15s - 0.15s;
+                animation-delay: $i * 0.15s - 0.15s;
+    }
+}
+
+@-webkit-keyframes appearance {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
@@ -115,6 +130,17 @@
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes appearanceDesktopTablet {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 
@@ -247,7 +273,8 @@
 
     .proposal {
         width: 100%;
-        animation: appearanceDesktopTablet 1s backwards;
+        -webkit-animation: appearanceDesktopTablet 1s backwards;
+                animation: appearanceDesktopTablet 1s backwards;
     }
 
     .button-command-container {
@@ -301,7 +328,8 @@
     .proposal {
         width: 45%;
         margin: 0 0 3% 0;
-        animation: appearanceDesktopTablet 1s backwards;
+        -webkit-animation: appearanceDesktopTablet 1s backwards;
+                animation: appearanceDesktopTablet 1s backwards;
     }
 
     .button-command-container {

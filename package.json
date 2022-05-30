@@ -1,0 +1,24 @@
+{
+  "name": "oh_my_food_soudrain_celine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch --update --style=expanded scss/app.scss:css/app.css",
+    "sass-prod": "sass --no-source-map --style=compressed scss/app.scss:css/app.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saika667/P3_oh_my_food.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Saika667/P3_oh_my_food/issues"
+  },
+  "homepage": "https://github.com/Saika667/P3_oh_my_food#readme",
+  "dependencies": {
+    "sass": "^1.52.1"
+  }
+}

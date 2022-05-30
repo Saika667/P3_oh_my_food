@@ -1,13 +1,10 @@
-
-@import "utils/mixins";
 @import "utils/variables";
-@import "utils/functions";
 
 @import "base/base";
+@import "base/footer";
+@import "base/header";
 @import "layout/loader-animation";
 @import "layout/sections-index";
 @import "layout/sections-menu";
-@import "layout/footer";
-@import "layout/header";
 
 @import "components/button";
