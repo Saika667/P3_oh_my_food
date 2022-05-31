@@ -1,1 +1,1511 @@
-body{font-family:"Roboto",sans-serif;margin:0}a{text-decoration:none;color:#000}h1{font-size:22px;margin:0}h2{font-size:18px;margin:0}p{font-size:16px;margin:0}hr{width:37px;height:2px;background-color:#99e2d0;margin:5px 0 13px 0;border:none}@media all and (min-width: 1301px){body>*{max-width:1920px;margin:0 auto}}footer{background-color:#333;padding:5%;width:100%;box-sizing:border-box}footer>div{margin-bottom:3%;display:flex}footer>div h2{font-size:25px;letter-spacing:2px;color:#fff;font-family:"Shrikhand",sans-serif;margin-bottom:2%}footer>div i{color:#fff}footer>div a{color:#fff}.footer-container-icon{width:35px}@media all and (min-width: 1301px){footer>div{margin-bottom:2%}}@media all and (min-width: 769px)and (max-width: 1300px){footer>div{margin-bottom:2%}}#oh-my-food-logo{display:flex;width:50%;margin:5% auto}.header-menu{display:flex;flex-direction:row-reverse;align-items:center;position:relative}@media all and (min-width: 1301px){header{width:100%;margin:auto}#oh-my-food-logo{width:30%;margin:2% auto}}@media all and (min-width: 769px)and (max-width: 1300px){header{width:100%;margin:auto}#oh-my-food-logo{width:30%;margin:2% auto}}#loader-animation{visibility:hidden;background-color:#fff;animation:showAndHide 3s;position:fixed;left:0;right:0;top:0;bottom:0;z-index:10;display:flex;align-items:center;justify-content:center}#cookingPot{display:flex;align-items:center;justify-content:end;flex-direction:column;width:100%;height:500px;margin:auto;position:relative}#lid{display:flex;align-items:center;flex-direction:column;animation:lid-movement 2.5s}#potWrist{background-color:#278870;border-radius:6px 6px 0 0;width:40px;height:10px;margin-bottom:-2px}#cookingPotLid{border:2px solid #71d7be;border-top:none;border-radius:50% 50% 0 0;width:180px;height:20px;margin-bottom:-2px;background-color:#99e2d0}#cookingPotBody{border-top:2px solid #71d7be;border-radius:0 0 15px 15px;width:180px;height:160px;position:relative;z-index:1;background-color:#99e2d0}#cookingPotBodyReflection{background-color:#c1ede2;border-radius:0 0 15px 0;width:40px;height:160px;position:absolute;right:10px;bottom:0}#cookingPotBodyReflectionBis{background-color:#c1ede2;width:20px;height:160px;position:absolute;right:75px;bottom:0}#potWristRight{background-color:#278870;border-radius:0 50% 0 0;width:25px;height:7px;position:absolute;right:-15px;bottom:129px;z-index:1}#potWristLeft{background-color:#278870;border-radius:50% 0 0 0;width:25px;height:7px;position:absolute;left:-15px;bottom:129px;z-index:1}.smoke:nth-child(odd){animation:smoke-right 2.8s linear}.smoke:nth-child(even){animation:smoke-left 2.8s linear}.pink{background-color:#ff79da}.purple{background-color:#9356dc}.smoke{border-radius:50%;position:absolute}.smoke.smoke-1{height:50px;width:50px;bottom:111px}.smoke.smoke-2{height:70px;width:70px;bottom:87px}.smoke.smoke-3{height:80px;width:80px;bottom:66px}#titleOhMyFood{font-family:"Shrikhand",sans-serif;font-size:33px;width:100%;text-align:center;margin:auto}#titleOhMyFood span{display:inline-block;animation:anim-text 600ms cubic-bezier(0.165, 0.44, 0.64, 1),color-text 1s cubic-bezier(0.165, 0.44, 0.64, 1);animation-iteration-count:5,3}@keyframes showAndHide{0%{visibility:visible;opacity:1}90%{opacity:1}98%{opacity:.5}100%{visibility:hidden;opacity:0}}#titleOhMyFood span:nth-child(1){animation-delay:.05s}#titleOhMyFood span:nth-child(2){animation-delay:.1s}#titleOhMyFood span:nth-child(3){animation-delay:.15s}#titleOhMyFood span:nth-child(4){animation-delay:.2s}#titleOhMyFood span:nth-child(5){animation-delay:.25s}#titleOhMyFood span:nth-child(6){animation-delay:.3s}#titleOhMyFood span:nth-child(7){animation-delay:.35s}#titleOhMyFood span:nth-child(8){animation-delay:.4s}@keyframes anim-text{0%{transform:rotateY(-35deg)}25%{transform:translateY(3px) rotateY(35deg)}50%{transform:rotateY(-35deg)}75%{transform:translateY(6px) rotateY(35deg)}100%{transform:rotateY(-35deg)}}@keyframes color-text{0%{color:#9356dc}50%{color:#ff79da}100%{color:#99e2d0}}.smoke:nth-child(1){animation-delay:.2s}.smoke:nth-child(2){animation-delay:.4s}.smoke:nth-child(3){animation-delay:.6s}.smoke:nth-child(4){animation-delay:.8s}.smoke:nth-child(5){animation-delay:1s}.smoke:nth-child(6){animation-delay:1.2s}.smoke:nth-child(7){animation-delay:1.4s}.smoke:nth-child(8){animation-delay:1.6s}.smoke:nth-child(9){animation-delay:1.8s}.smoke:nth-child(10){animation-delay:2s}.smoke:nth-child(11){animation-delay:2.2s}.smoke:nth-child(12){animation-delay:2.4s}@keyframes smoke-right{0%{transform:translate(0, 0) scale(1);opacity:1;filter:blur(5px)}100%{transform:translate(100px, -500px) scale(3);opacity:0;filter:blur(5px)}}@keyframes smoke-left{0%{transform:translate(0, 0) scale(1);opacity:1;filter:blur(5px)}100%{transform:translate(-100px, -500px) scale(3);opacity:0;filter:blur(5px)}}@keyframes lid-movement{0%{transform:skewY(-5deg) translateY(-10px);transform-origin:left;animation-timing-function:ease-in}10%{transform:skewY(0deg) translateY(0);animation-timing-function:linear}20%{transform:skewY(5deg) translateY(-10px);transform-origin:right;animation-timing-function:ease-in}30%{transform:skewY(0deg) translateY(0);animation-timing-function:linear}40%{transform:skewY(-15deg) translateY(-15px);transform-origin:left;animation-timing-function:ease-in}50%{transform:translateY(0);animation-timing-function:linear}60%{transform:skewY(15deg) translateY(-15px);transform-origin:right;animation-timing-function:ease-in}70%{transform:translateY(0);animation-timing-function:linear}74%{transform:skewY(-5deg) translateY(-10px);animation-timing-function:ease-in;transform-origin:center}78%{transform:skewY(10deg) translateY(-20px);animation-timing-function:linear}82%{transform:skewY(-10deg) translateY(-30px)}86%{transform:skewY(5deg) translateY(-35px);animation-timing-function:ease-out}90%{transform:translateY(-25px) skewY(-10deg);animation-timing-function:linear}94%{transform:skewY(5deg) translateY(-15px)}98%{transform:translateY(-5px) skewY(-5deg)}100%{transform:translateY(0)}}.search{background-color:#f2f2f2}.search-location{display:flex;justify-content:center;align-items:baseline;background-color:#e5e5e5}.search-location-container{width:300px;display:flex}.search-location-container-icon{width:100px;display:flex;justify-content:end;align-items:center}.search-location-container input{margin:5% 0;border:none;background:initial;font-size:16px;font-weight:600;width:200px;padding-left:4%}.search-description{text-align:center}.search-description h1{font-weight:bold;width:65%;margin:6% auto}.search-description h2{color:#737373;font-weight:400}.search-description-container-button{width:60%;margin:auto;padding:5%}.working{margin:10% 0;display:flex;flex-direction:column;align-items:center}.working-title{width:80%;margin-bottom:5%}.working-proposal{box-shadow:0 5px 9px 3px rgba(0,0,0,.15);background-color:#f2f2f2;display:flex;margin-bottom:8%;width:80%;height:70px;border-radius:20px;position:relative;cursor:pointer}.working-proposal-number{background-color:#9356dc;border-radius:50%;position:absolute;left:-12px;top:33%;width:25px;height:25px;line-height:25px;text-align:center;color:#fff}.working-proposal-description{display:flex;align-items:baseline;width:100%}.working-proposal-description-container-icon{display:flex;width:60px;align-items:center;justify-content:center;height:100%}.working-proposal-description-container-icon i{color:#a6a6a6;padding-left:10px}.working-proposal-description h2{font-size:15px;white-space:nowrap}.working-proposal:hover{background-color:rgba(147,86,220,.2)}.working-proposal:hover i{color:#9356dc}.restaurant{width:100%;background-color:#f2f2f2;display:flex;flex-direction:column;align-items:center;padding:10% 0 7% 0}.restaurant-title{width:90%;margin-bottom:5%}.restaurant-ad{width:90%;border-radius:20px;height:250px;display:flex;flex-direction:column;background-color:#fff;overflow:hidden;position:relative;margin-bottom:5%;box-shadow:0 3px 6px 5px rgba(0,0,0,.05)}.restaurant-ad img{width:100%;object-fit:cover;object-position:center;height:180px}.restaurant-ad-new{position:absolute;background-color:#99e2d0;color:#278870;padding:2% 3%;right:7%;top:6%}.restaurant-ad-description{height:70px}.restaurant-ad-description h2{white-space:nowrap;margin:1% 0 0 7%}.restaurant-ad-description p{margin:1% 0 0 7%}.restaurant-ad-container-icon{width:70px;display:flex;justify-content:center;align-items:center;position:absolute;right:10px;bottom:20px}.heart{color:#a6a6a6;font-size:30px;cursor:pointer}.restaurant-ad-container-icon:hover i,.restaurant-ad-container-icon:active i,.restaurant-ad-container-icon:focus i{animation:heart 1s;background:linear-gradient(-7deg, #9356DC 4%, #FF79DA 100%);-webkit-background-clip:text;-webkit-text-fill-color:rgba(0,0,0,0);font-weight:bold}@keyframes heart{0%{opacity:.1}100%{opacity:1}}@media all and (min-width: 1301px){.search-description h1{margin:2% auto}.search-description-container-button{width:30%;padding:3%}.working{flex-direction:row;flex-wrap:wrap;margin:3% 0}.working-title{margin-left:5%;margin-bottom:3%}.working-proposal{width:25%;margin:auto}.restaurant{flex-direction:initial;flex-wrap:wrap;justify-content:space-evenly;padding:5% 0 3% 0}.restaurant-ad{width:22%}.restaurant-ad img{width:100%;object-fit:cover;object-position:center;height:180px}.restaurant-ad-new{position:absolute;background-color:#99e2d0;color:#278870;padding:2% 3%;right:7%;top:6%}.restaurant-ad-description{height:70px}.restaurant-ad-description h2{white-space:nowrap;margin:3% 0 0% 7%}.restaurant-ad-description p{margin:1% 0 0 7%}.restaurant-ad-container-icon{width:70px;display:flex;justify-content:center;align-items:center}}@media all and (min-width: 769px)and (max-width: 1300px){.search-description h1{margin:2% auto}.search-description-container-button{width:40%;padding:3%}.working{flex-direction:row;flex-wrap:wrap;margin:5% 0}.working-title{margin-left:5%;margin-bottom:3%}.working-proposal{width:30%;margin:auto}.working-proposal-description h2{font-size:12px}.restaurant{flex-direction:initial;flex-wrap:wrap;justify-content:space-evenly;padding:5% 0}.restaurant-ad{width:45%;height:360px}.restaurant-ad img{height:280px}.restaurant-ad-description h2{margin:3% 0 1% 7%}}.main{width:100%}.main img{width:100%;position:relative;height:400px;object-fit:cover;object-position:center}.menu{width:100%;background-color:#f2f2f2;margin-top:-30px;position:relative;z-index:1;border-radius:30px 30px 0 0}.menu-title{background-color:#f2f2f2;border-radius:30px 30px 0 0;display:flex;justify-content:space-between;height:130px;font-family:"shrikhand",sans-serif;line-height:130px;width:94%;margin:auto}.menu-title h1{font-size:30px;letter-spacing:2px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap}.menu-title-container-icon{width:80px;display:flex;justify-content:center;align-items:center}.menu-title-container-icon i{color:#a6a6a6;font-size:30px;cursor:pointer}.proposal{background-color:#fff;border-radius:20px;height:80px;box-sizing:border-box;width:94%;padding:12px 24px 12px 12px;margin:0 auto 15px auto;box-shadow:0 5px 9px 3px rgba(0,0,0,.15);overflow:hidden;position:relative;animation:appearance 1s backwards}.proposal-description{margin-bottom:8px}.proposal-description h2{font-size:23px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}.proposal-price{display:flex;justify-content:space-between;box-sizing:border-box}.proposal-price span{font-weight:bold;transition-duration:500ms}.proposal-price p{text-overflow:ellipsis;overflow:hidden;white-space:nowrap}.proposal:nth-child(1){animation-delay:0s}.proposal:nth-child(2){animation-delay:.15s}.proposal:nth-child(3){animation-delay:.3s}.proposal:nth-child(4){animation-delay:.45s}@keyframes appearance{0%{opacity:0;transform:translateY(20px)}100%{opacity:1;transform:translateY(0)}}@keyframes appearanceDesktopTablet{0%{opacity:0;transform:translateX(20px)}100%{opacity:1;transform:translateX(0)}}.proposal:hover .proposal-description h2{margin-right:60px}.proposal:hover .check-animation{width:80px;height:80px;border-radius:0 20px 20px 0;right:0}.proposal:hover .check-animation i{transform:rotate(360deg)}.proposal:hover span{margin-right:70px}.starter{background-color:#f2f2f2}.starter-title{text-transform:uppercase;margin:0 0 0 3%}.dishes,.desserts{background-color:#f2f2f2}.dishes-title,.desserts-title{text-transform:uppercase;margin:13% 0 0 3%}.button-command-container{width:60%;margin:auto;padding:10% 0 20% 0}.check-animation{background-color:#99e2d0;display:flex;justify-content:center;align-items:center;width:80px;height:80px;margin:-12px 0 0 0;border-radius:0 20px 20px 0;position:absolute;right:-80px;top:12px;transition-duration:750ms}.check-animation i{color:#fff;font-size:20px;transition:transform 500ms 250ms;transform:rotate(0deg)}@media all and (min-width: 1301px){hr{margin:4% 0}.menu{display:flex;flex-wrap:wrap}.menu-title{width:90%}.starter,.dishes,.desserts{display:flex;flex-direction:column;justify-content:space-between;width:30%;margin:auto}.starter-title,.dishes-title,.desserts-title{width:90%;font-size:37px}.starter-title{margin:0}.dishes-title{margin:4% 0 0 0}.desserts-title{margin:4% 0 0 0}.proposal{width:100%;animation:appearanceDesktopTablet 1s backwards}.button-command-container{width:25%;padding:4% 0}}@media all and (min-width: 769px)and (max-width: 1300px){hr{margin:1% 0}.menu-title{width:90%}.starter,.dishes,.desserts{display:flex;flex-wrap:wrap;justify-content:space-between;width:90%;margin:auto}.starter-title,.dishes-title,.desserts-title{width:100%;font-size:27px}.starter-title{margin:0}.dishes-title{margin:4% 0 0 0}.desserts-title{margin:4% 0 0 0}.proposal{width:45%;margin:0 0 3% 0;animation:appearanceDesktopTablet 1s backwards}.button-command-container{width:30%;padding:4% 0}}#button-research{background:linear-gradient(-7deg, #9356DC 4%, #FF79DA 100%);width:100%;height:45px;color:#fff;font-size:17px;border-radius:25px;box-shadow:0 5px 9px 3px rgba(0,0,0,.15);border:none;cursor:pointer}#button-research:hover{background:linear-gradient(-7deg, #a16be0 4%, #ff93e1 100%);box-shadow:0 5px 9px 3px rgba(0,0,0,.3)}#button-back{background-color:#fff;border:none;position:absolute;left:10px;cursor:pointer}#button-back i{color:#000;font-size:20px}@media all and (min-width: 1301px){#button-back i{font-size:40px}}@media all and (min-width: 769px)and (max-width: 1300px){#button-back i{font-size:30px}}
+@charset "UTF-8";
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-size: 22px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+p {
+  font-size: 16px;
+  margin: 0;
+}
+
+hr {
+  width: 37px;
+  height: 2px;
+  background-color: #99E2D0;
+  margin: 5px 0 13px 0;
+  border: none;
+}
+
+/*-------------------------------------------------------------------------------------
+                                    Breakpoint desktop (grand écran)
+-------------------------------------------------------------------------------------*/
+@media all and (min-width: 1301px) {
+  body > * {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+}
+
+/*-------------------------------------------------------------------------------------
+                                    FIN Breakpoint desktop (grand écran)
+-------------------------------------------------------------------------------------*/
+footer {
+  background-color: #333333;
+  padding: 5%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+footer > div {
+  margin-bottom: 3%;
+  display: flex;
+}
+
+footer > div h2 {
+  font-size: 25px;
+  letter-spacing: 2px;
+  color: white;
+  font-family: 'Shrikhand', sans-serif;
+  margin-bottom: 2%;
+}
+
+footer > div i {
+  color: white;
+}
+
+footer > div a {
+  color: white;
+}
+
+.footer-container-icon {
+  width: 35px;
+}
+
+/*-------------------------------------------------------------------------------------
+                                    Breakpoint desktop
+-------------------------------------------------------------------------------------*/
+@media all and (min-width: 1301px) {
+  footer > div {
+    margin-bottom: 2%;
+  }
+}
+
+/*-------------------------------------------------------------------------------------
+                                    FIN Breakpoint desktop
+-------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------
+                                    Breakpoint tablette
+-------------------------------------------------------------------------------------*/
+@media all and (min-width: 769px) and (max-width: 1300px) {
+  footer > div {
+    margin-bottom: 2%;
+  }
+}
+
+/*-------------------------------------------------------------------------------------
+                                    FIN Breakpoint tablette
+-------------------------------------------------------------------------------------*/
+#oh-my-food-logo {
+  display: flex;
+  width: 50%;
+  margin: 5% auto;
+}
+
+.header-menu {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  position: relative;
+}
+
+/*-------------------------------------------------------------------------------------
+                                    Breakpoint desktop
+-------------------------------------------------------------------------------------*/
+@media all and (min-width: 1301px) {
+  header {
+    width: 100%;
+    margin: auto;
+  }
+  #oh-my-food-logo {
+    width: 30%;
+    margin: 2% auto;
+  }
+}
+
+/*-------------------------------------------------------------------------------------
+                                    FIN Breakpoint desktop
+-------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------
+                                    Breakpoint tablette
+-------------------------------------------------------------------------------------*/
+@media all and (min-width: 769px) and (max-width: 1300px) {
+  header {
+    width: 100%;
+    margin: auto;
+  }
+  #oh-my-food-logo {
+    width: 30%;
+    margin: 2% auto;
+  }
+}
+
+/*-------------------------------------------------------------------------------------
+                                    FIN Breakpoint tablette
+-------------------------------------------------------------------------------------*/
+#loader-animation {
+  visibility: hidden;
+  background-color: white;
+  -webkit-animation: showAndHide 3s;
+  animation: showAndHide 3s;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --------------------------------------------------------
+                    Marmitte
+---------------------------------------------------------*/
+#cookingPot {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  width: 100%;
+  height: 500px;
+  margin: auto;
+  position: relative;
+}
+
+#lid {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  -webkit-animation: lid-movement 2.5s;
+  animation: lid-movement 2.5s;
+}
+
+#potWrist {
+  background-color: #278870;
+  border-radius: 6px 6px 0 0;
+  width: 40px;
+  height: 10px;
+  margin-bottom: -2px;
+}
+
+#cookingPotLid {
+  border: 2px solid #71d7be;
+  border-top: none;
+  border-radius: 50% 50% 0 0;
+  width: 180px;
+  height: 20px;
+  margin-bottom: -2px;
+  background-color: #99E2D0;
+}
+
+#cookingPotBody {
+  border-top: 2px solid #71d7be;
+  border-radius: 0 0 15px 15px;
+  width: 180px;
+  height: 160px;
+  position: relative;
+  z-index: 1;
+  background-color: #99E2D0;
+}
+
+#cookingPotBodyReflection {
+  background-color: #c1ede2;
+  border-radius: 0 0 15px 0;
+  width: 40px;
+  height: 160px;
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+}
+
+#cookingPotBodyReflectionBis {
+  background-color: #c1ede2;
+  width: 20px;
+  height: 160px;
+  position: absolute;
+  right: 75px;
+  bottom: 0;
+}
+
+#potWristRight {
+  background-color: #278870;
+  border-radius: 0 50% 0 0;
+  width: 25px;
+  height: 7px;
+  position: absolute;
+  right: -15px;
+  bottom: 129px;
+  z-index: 1;
+}
+
+#potWristLeft {
+  background-color: #278870;
+  border-radius: 50% 0 0 0;
+  width: 25px;
+  height: 7px;
+  position: absolute;
+  left: -15px;
+  bottom: 129px;
+  z-index: 1;
+}
+
+/* --------------------------------------------------------
+                    FIN Marmitte
+---------------------------------------------------------*/
+/* --------------------------------------------------------
+                    Fumée
+---------------------------------------------------------*/
+.smoke:nth-child(odd) {
+  -webkit-animation: smoke-right 2.8s linear;
+  animation: smoke-right 2.8s linear;
+}
+
+.smoke:nth-child(even) {
+  -webkit-animation: smoke-left 2.8s linear;
+  animation: smoke-left 2.8s linear;
+}
+
+.pink {
+  background-color: #FF79DA;
+}
+
+.purple {
+  background-color: #9356DC;
+}
+
+.smoke {
+  border-radius: 50%;
+  position: absolute;
+}
+
+.smoke.smoke-1 {
+  height: 50px;
+  width: 50px;
+  bottom: 111px;
+}
+
+.smoke.smoke-2 {
+  height: 70px;
+  width: 70px;
+  bottom: 87px;
+}
+
+.smoke.smoke-3 {
+  height: 80px;
+  width: 80px;
+  bottom: 66px;
+}
+
+/* --------------------------------------------------------
+                    FIN Fumée
+---------------------------------------------------------*/
+/* --------------------------------------------------------
+                    Texte
+---------------------------------------------------------*/
+#titleOhMyFood {
+  font-family: 'Shrikhand', sans-serif;
+  font-size: 33px;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+#titleOhMyFood span {
+  display: inline-block;
+  -webkit-animation: anim-text 600ms cubic-bezier(0.165, 0.44, 0.64, 1), color-text 1s cubic-bezier(0.165, 0.44, 0.64, 1);
+  animation: anim-text 600ms cubic-bezier(0.165, 0.44, 0.64, 1), color-text 1s cubic-bezier(0.165, 0.44, 0.64, 1);
+  -webkit-animation-iteration-count: 5, 3;
+  animation-iteration-count: 5, 3;
+}
+
+/* --------------------------------------------------------
+                    FIN Texte
+---------------------------------------------------------*/
+/* --------------------------------------------------------
+                    Animation loader
+---------------------------------------------------------*/
+@-webkit-keyframes showAndHide {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  98% {
+    opacity: 0.5;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@keyframes showAndHide {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  98% {
+    opacity: 0.5;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+/* --------------------------------------------------------
+                    FIN Animation loader
+---------------------------------------------------------*/
+/* --------------------------------------------------------
+                    Animation Texte
+---------------------------------------------------------*/
+#titleOhMyFood span:nth-child(1) {
+  -webkit-animation-delay: 0.05s;
+  animation-delay: 0.05s;
+}
+
+#titleOhMyFood span:nth-child(2) {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+
+#titleOhMyFood span:nth-child(3) {
+  -webkit-animation-delay: 0.15s;
+  animation-delay: 0.15s;
+}
+
+#titleOhMyFood span:nth-child(4) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+#titleOhMyFood span:nth-child(5) {
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
+}
+
+#titleOhMyFood span:nth-child(6) {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+#titleOhMyFood span:nth-child(7) {
+  -webkit-animation-delay: 0.35s;
+  animation-delay: 0.35s;
+}
+
+#titleOhMyFood span:nth-child(8) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+@-webkit-keyframes anim-text {
+  0% {
+    transform: rotateY(-35deg);
+  }
+  25% {
+    transform: translateY(3px) rotateY(35deg);
+  }
+  50% {
+    transform: rotateY(-35deg);
+  }
+  75% {
+    transform: translateY(6px) rotateY(35deg);
+  }
+  100% {
+    transform: rotateY(-35deg);
+  }
+}
+
+@keyframes anim-text {
+  0% {
+    transform: rotateY(-35deg);
+  }
+  25% {
+    transform: translateY(3px) rotateY(35deg);
+  }
+  50% {
+    transform: rotateY(-35deg);
+  }
+  75% {
+    transform: translateY(6px) rotateY(35deg);
+  }
+  100% {
+    transform: rotateY(-35deg);
+  }
+}
+
+@-webkit-keyframes color-text {
+  0% {
+    color: #9356DC;
+  }
+  50% {
+    color: #FF79DA;
+  }
+  100% {
+    color: #99E2D0;
+  }
+}
+
+@keyframes color-text {
+  0% {
+    color: #9356DC;
+  }
+  50% {
+    color: #FF79DA;
+  }
+  100% {
+    color: #99E2D0;
+  }
+}
+
+/* --------------------------------------------------------
+                    FIN Animation Texte
+---------------------------------------------------------*/
+/* --------------------------------------------------------
+                    Animation fumée
+---------------------------------------------------------*/
+.smoke:nth-child(1) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.smoke:nth-child(2) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.smoke:nth-child(3) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.smoke:nth-child(4) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+.smoke:nth-child(5) {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.smoke:nth-child(6) {
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+
+.smoke:nth-child(7) {
+  -webkit-animation-delay: 1.4s;
+  animation-delay: 1.4s;
+}
+
+.smoke:nth-child(8) {
+  -webkit-animation-delay: 1.6s;
+  animation-delay: 1.6s;
+}
+
+.smoke:nth-child(9) {
+  -webkit-animation-delay: 1.8s;
+  animation-delay: 1.8s;
+}
+
+.smoke:nth-child(10) {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.smoke:nth-child(11) {
+  -webkit-animation-delay: 2.2s;
+  animation-delay: 2.2s;
+}
+
+.smoke:nth-child(12) {
+  -webkit-animation-delay: 2.4s;
+  animation-delay: 2.4s;
+}
+
+@-webkit-keyframes smoke-right {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+  }
+  100% {
+    transform: translate(100px, -500px) scale(3);
+    opacity: 0;
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+  }
+}
+
+@keyframes smoke-right {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+  }
+  100% {
+    transform: translate(100px, -500px) scale(3);
+    opacity: 0;
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+  }
+}
+
+@-webkit-keyframes smoke-left {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+  }
+  100% {
+    transform: translate(-100px, -500px) scale(3);
+    opacity: 0;
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+  }
+}
+
+@keyframes smoke-left {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+  }
+  100% {
+    transform: translate(-100px, -500px) scale(3);
+    opacity: 0;
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+  }
+}
+
+/* --------------------------------------------------------
+                    Animation fumée
+---------------------------------------------------------*/
+/* --------------------------------------------------------
+                    Animation couvercle 
+---------------------------------------------------------*/
+@-webkit-keyframes lid-movement {
+  0% {
+    transform: skewY(-5deg) translateY(-10px);
+    transform-origin: left;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  10% {
+    transform: skewY(0deg) translateY(0);
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+  }
+  20% {
+    transform: skewY(5deg) translateY(-10px);
+    transform-origin: right;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  30% {
+    transform: skewY(0deg) translateY(0);
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+  }
+  40% {
+    transform: skewY(-15deg) translateY(-15px);
+    transform-origin: left;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  50% {
+    transform: translateY(0);
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+  }
+  60% {
+    transform: skewY(15deg) translateY(-15px);
+    transform-origin: right;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  70% {
+    transform: translateY(0);
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+  }
+  74% {
+    transform: skewY(-5deg) translateY(-10px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    transform-origin: center;
+  }
+  78% {
+    transform: skewY(10deg) translateY(-20px);
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+  }
+  82% {
+    transform: skewY(-10deg) translateY(-30px);
+  }
+  86% {
+    transform: skewY(5deg) translateY(-35px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  90% {
+    transform: translateY(-25px) skewY(-10deg);
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+  }
+  94% {
+    transform: skewY(5deg) translateY(-15px);
+  }
+  98% {
+    transform: translateY(-5px) skewY(-5deg);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes lid-movement {
+  0% {
+    transform: skewY(-5deg) translateY(-10px);
+    transform-origin: left;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  10% {
+    transform: skewY(0deg) translateY(0);
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+  }
+  20% {
+    transform: skewY(5deg) translateY(-10px);
+    transform-origin: right;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  30% {
+    transform: skewY(0deg) translateY(0);
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+  }
+  40% {
+    transform: skewY(-15deg) translateY(-15px);
+    transform-origin: left;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  50% {
+    transform: translateY(0);
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+  }
+  60% {
+    transform: skewY(15deg) translateY(-15px);
+    transform-origin: right;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  70% {
+    transform: translateY(0);
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+  }
+  74% {
+    transform: skewY(-5deg) translateY(-10px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    transform-origin: center;
+  }
+  78% {
+    transform: skewY(10deg) translateY(-20px);
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+  }
+  82% {
+    transform: skewY(-10deg) translateY(-30px);
+  }
+  86% {
+    transform: skewY(5deg) translateY(-35px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  90% {
+    transform: translateY(-25px) skewY(-10deg);
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+  }
+  94% {
+    transform: skewY(5deg) translateY(-15px);
+  }
+  98% {
+    transform: translateY(-5px) skewY(-5deg);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* --------------------------------------------------------
+                    Animation couvercle 
+---------------------------------------------------------*/
+.search {
+  background-color: #F2F2F2;
+}
+
+.search-location {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  background-color: #e5e5e5;
+}
+
+.search-location-container {
+  width: 300px;
+  display: flex;
+}
+
+.search-location-container-icon {
+  width: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.search-location-container input {
+  margin: 5% 0;
+  border: none;
+  background: initial;
+  font-size: 16px;
+  font-weight: 600;
+  width: 200px;
+  padding-left: 4%;
+}
+
+.search-description {
+  text-align: center;
+}
+
+.search-description h1 {
+  font-weight: bold;
+  width: 65%;
+  margin: 6% auto;
+}
+
+.search-description h2 {
+  color: #737373;
+  font-weight: 400;
+}
+
+.search-description-container-button {
+  width: 60%;
+  margin: auto;
+  padding: 5%;
+}
+
+.working {
+  margin: 10% 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.working-title {
+  width: 80%;
+  margin-bottom: 5%;
+}
+
+.working-title h2 {
+  font-size: 22px;
+}
+
+.working-proposal {
+  box-shadow: 0 5px 9px 3px rgba(0, 0, 0, 0.15);
+  background-color: #F2F2F2;
+  display: flex;
+  margin-bottom: 8%;
+  width: 80%;
+  height: 70px;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.working-proposal-number {
+  background-color: #9356DC;
+  border-radius: 50%;
+  position: absolute;
+  left: -12px;
+  top: 33%;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  color: white;
+}
+
+.working-proposal-description {
+  display: flex;
+  align-items: baseline;
+  width: 100%;
+}
+
+.working-proposal-description-container-icon {
+  display: flex;
+  width: 60px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.working-proposal-description-container-icon i {
+  color: #a6a6a6;
+  padding-left: 10px;
+}
+
+.working-proposal-description h2 {
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+.working-proposal:hover {
+  background-color: rgba(147, 86, 220, 0.2);
+}
+
+.working-proposal:hover i {
+  color: #9356DC;
+}
+
+.restaurant {
+  width: 100%;
+  background-color: #F2F2F2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10% 0 7% 0;
+}
+
+.restaurant-title {
+  width: 90%;
+  margin-bottom: 5%;
+}
+
+.restaurant-title h2 {
+  font-size: 22px;
+}
+
+.restaurant-ad {
+  width: 90%;
+  border-radius: 20px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 5%;
+  box-shadow: 0 3px 6px 5px rgba(0, 0, 0, 0.05);
+}
+
+.restaurant-ad img {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  height: 180px;
+}
+
+.restaurant-ad-new {
+  position: absolute;
+  background-color: #99E2D0;
+  color: #278870;
+  padding: 2% 3%;
+  right: 7%;
+  top: 6%;
+}
+
+.restaurant-ad-description {
+  height: 70px;
+}
+
+.restaurant-ad-description h2 {
+  white-space: nowrap;
+  margin: 1% 0 0 7%;
+}
+
+.restaurant-ad-description p {
+  margin: 1% 0 0 7%;
+}
+
+.restaurant-ad-container-icon {
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 10px;
+  bottom: 20px;
+}
+
+.heart {
+  color: #a6a6a6;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.restaurant-ad-container-icon:hover i, .restaurant-ad-container-icon:active i, .restaurant-ad-container-icon:focus i {
+  -webkit-animation: heart 1s;
+  animation: heart 1s;
+  background: linear-gradient(-7deg, #9356DC 4%, #FF79DA 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+@-webkit-keyframes heart {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes heart {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*-------------------------------------------------------------------------------------
+                                    Breakpoint desktop
+-------------------------------------------------------------------------------------*/
+@media all and (min-width: 1301px) {
+  .search-description h1 {
+    margin: 2% auto;
+  }
+  .search-description-container-button {
+    width: 30%;
+    padding: 3%;
+  }
+  .working {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 3% 0;
+  }
+  .working-title {
+    margin-left: 5%;
+    margin-bottom: 3%;
+  }
+  .working-proposal {
+    width: 25%;
+    margin: auto;
+  }
+  .restaurant {
+    flex-direction: initial;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 5% 0 3% 0;
+  }
+  .restaurant-ad {
+    width: 22%;
+  }
+  .restaurant-ad img {
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    height: 180px;
+  }
+  .restaurant-ad-new {
+    position: absolute;
+    background-color: #99E2D0;
+    color: #278870;
+    padding: 2% 3%;
+    right: 7%;
+    top: 6%;
+  }
+  .restaurant-ad-description {
+    height: 70px;
+  }
+  .restaurant-ad-description h2 {
+    white-space: nowrap;
+    margin: 3% 0 0% 7%;
+  }
+  .restaurant-ad-description p {
+    margin: 1% 0 0 7%;
+  }
+  .restaurant-ad-container-icon {
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/*-------------------------------------------------------------------------------------
+                                    FIN Breakpoint desktop
+-------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------
+                                    Breakpoint tablette
+-------------------------------------------------------------------------------------*/
+@media all and (min-width: 769px) and (max-width: 1300px) {
+  .search-description h1 {
+    margin: 2% auto;
+  }
+  .search-description-container-button {
+    width: 40%;
+    padding: 3%;
+  }
+  .working {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 5% 0;
+  }
+  .working-title {
+    margin-left: 5%;
+    margin-bottom: 3%;
+  }
+  .working-proposal {
+    width: 30%;
+    margin: auto;
+  }
+  .working-proposal-description h2 {
+    font-size: 12px;
+  }
+  .restaurant {
+    flex-direction: initial;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 5% 0;
+  }
+  .restaurant-ad {
+    width: 45%;
+    height: 360px;
+  }
+  .restaurant-ad img {
+    height: 280px;
+  }
+  .restaurant-ad-description h2 {
+    margin: 3% 0 1% 7%;
+  }
+}
+
+/*-------------------------------------------------------------------------------------
+                                    FIN Breakpoint tablette
+-------------------------------------------------------------------------------------*/
+.main {
+  width: 100%;
+}
+
+.main img {
+  width: 100%;
+  position: relative;
+  height: 400px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+
+.menu {
+  width: 100%;
+  background-color: #F2F2F2;
+  margin-top: -30px;
+  position: relative;
+  z-index: 1;
+  border-radius: 30px 30px 0 0;
+}
+
+.menu-title {
+  background-color: #F2F2F2;
+  border-radius: 30px 30px 0 0;
+  display: flex;
+  justify-content: space-between;
+  height: 130px;
+  font-family: 'shrikhand', sans-serif;
+  line-height: 130px;
+  width: 94%;
+  margin: auto;
+}
+
+.menu-title h1 {
+  font-size: 30px;
+  letter-spacing: 2px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.menu-title-container-icon {
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-title-container-icon i {
+  color: #a6a6a6;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.proposal {
+  background-color: white;
+  border-radius: 20px;
+  height: 80px;
+  box-sizing: border-box;
+  width: 94%;
+  padding: 12px 24px 12px 12px;
+  margin: 0 auto 15px auto;
+  box-shadow: 0 5px 9px 3px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  position: relative;
+  -webkit-animation: appearance 1s backwards;
+  animation: appearance 1s backwards;
+}
+
+.proposal-description {
+  margin-bottom: 8px;
+}
+
+.proposal-description h2 {
+  font-size: 23px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.proposal-price {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.proposal-price span {
+  font-weight: bold;
+  transition-duration: 500ms;
+}
+
+.proposal-price p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/*-------------------------------------------------------------------------------------
+                                    Animation
+-------------------------------------------------------------------------------------*/
+/*ajout délai pour chaque proposal, les uns après les autres
+- 0.15s pour que le premier élément n'est pas de délai*/
+.proposal:nth-child(1) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.proposal:nth-child(2) {
+  -webkit-animation-delay: 0.15s;
+  animation-delay: 0.15s;
+}
+
+.proposal:nth-child(3) {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.proposal:nth-child(4) {
+  -webkit-animation-delay: 0.45s;
+  animation-delay: 0.45s;
+}
+
+@-webkit-keyframes appearance {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes appearance {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes appearanceDesktopTablet {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes appearanceDesktopTablet {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/*-------------------------------------------------------------------------------------
+                                    FIN Animation
+-------------------------------------------------------------------------------------*/
+.proposal:hover .proposal-description h2 {
+  margin-right: 60px;
+}
+
+.proposal:hover .check-animation {
+  width: 80px;
+  height: 80px;
+  border-radius: 0 20px 20px 0;
+  right: 0;
+}
+
+.proposal:hover .check-animation i {
+  transform: rotate(360deg);
+}
+
+.proposal:hover span {
+  margin-right: 70px;
+}
+
+.starter {
+  background-color: #F2F2F2;
+}
+
+.starter-title {
+  text-transform: uppercase;
+  margin: 0 0 0 3%;
+}
+
+.dishes,
+.desserts {
+  background-color: #F2F2F2;
+}
+
+.dishes-title,
+.desserts-title {
+  text-transform: uppercase;
+  margin: 13% 0 0 3%;
+}
+
+.button-command-container {
+  width: 60%;
+  margin: auto;
+  padding: 10% 0 20% 0;
+}
+
+.check-animation {
+  background-color: #99E2D0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  margin: -12px 0 0 0;
+  border-radius: 0 20px 20px 0;
+  position: absolute;
+  right: -80px;
+  top: 12px;
+  transition-duration: 750ms;
+}
+
+.check-animation i {
+  color: white;
+  font-size: 20px;
+  transition: transform 500ms 250ms;
+  transform: rotate(0deg);
+}
+
+/*-------------------------------------------------------------------------------------
+                                    Breakpoint desktop
+-------------------------------------------------------------------------------------*/
+@media all and (min-width: 1301px) {
+  hr {
+    margin: 4% 0;
+  }
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .menu-title {
+    width: 90%;
+  }
+  .starter,
+  .dishes,
+  .desserts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+    margin: auto;
+  }
+  .starter-title,
+  .dishes-title,
+  .desserts-title {
+    width: 90%;
+    font-size: 37px;
+  }
+  .starter-title {
+    margin: 0;
+  }
+  .dishes-title {
+    margin: 4% 0 0 0;
+  }
+  .desserts-title {
+    margin: 4% 0 0 0;
+  }
+  .proposal {
+    width: 100%;
+    -webkit-animation: appearanceDesktopTablet 1s backwards;
+    animation: appearanceDesktopTablet 1s backwards;
+  }
+  .button-command-container {
+    width: 25%;
+    padding: 4% 0;
+  }
+}
+
+/*-------------------------------------------------------------------------------------
+                                    FIN Breakpoint desktop
+-------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------
+                                    Breakpoint tablette
+-------------------------------------------------------------------------------------*/
+@media all and (min-width: 769px) and (max-width: 1300px) {
+  hr {
+    margin: 1% 0;
+  }
+  .menu-title {
+    width: 90%;
+  }
+  .starter,
+  .dishes,
+  .desserts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+  }
+  .starter-title,
+  .dishes-title,
+  .desserts-title {
+    width: 100%;
+    font-size: 27px;
+  }
+  .starter-title {
+    margin: 0;
+  }
+  .dishes-title {
+    margin: 4% 0 0 0;
+  }
+  .desserts-title {
+    margin: 4% 0 0 0;
+  }
+  .proposal {
+    width: 45%;
+    margin: 0 0 3% 0;
+    -webkit-animation: appearanceDesktopTablet 1s backwards;
+    animation: appearanceDesktopTablet 1s backwards;
+  }
+  .button-command-container {
+    width: 30%;
+    padding: 4% 0;
+  }
+}
+
+/*-------------------------------------------------------------------------------------
+                                    FIN Breakpoint tablette
+-------------------------------------------------------------------------------------*/
+#button-research {
+  background: linear-gradient(-7deg, #9356DC 4%, #FF79DA 100%);
+  width: 100%;
+  height: 45px;
+  color: white;
+  font-size: 17px;
+  border-radius: 25px;
+  box-shadow: 0 5px 9px 3px rgba(0, 0, 0, 0.15);
+  border: none;
+  cursor: pointer;
+}
+
+#button-research:hover {
+  background: linear-gradient(-7deg, #a16be0 4%, #ff93e1 100%);
+  box-shadow: 0 5px 9px 3px rgba(0, 0, 0, 0.3);
+}
+
+#button-back {
+  background-color: white;
+  border: none;
+  position: absolute;
+  left: 10px;
+  cursor: pointer;
+}
+
+#button-back i {
+  color: black;
+  font-size: 20px;
+}
+
+/*-------------------------------------------------------------------------------------
+                                    Breakpoint desktop
+-------------------------------------------------------------------------------------*/
+@media all and (min-width: 1301px) {
+  #button-back i {
+    font-size: 40px;
+  }
+}
+
+/*-------------------------------------------------------------------------------------
+                                    FIN Breakpoint desktop
+-------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------
+                                    Breakpoint tablette
+-------------------------------------------------------------------------------------*/
+@media all and (min-width: 769px) and (max-width: 1300px) {
+  #button-back i {
+    font-size: 30px;
+  }
+}
+
+/*-------------------------------------------------------------------------------------
+                                    FIN Breakpoint tablette
+-------------------------------------------------------------------------------------*/
