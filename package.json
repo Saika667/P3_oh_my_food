@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass --watch --update --style=expanded scss/app.scss:css/app.css",
-    "sass-prod": "sass --no-source-map --style=compressed scss/app.scss:css/app.css"
+    "sass-prod": "sass --no-source-map --style=compressed scss/app.scss:css/app.css",
+    "prefix": "postcss ./css/app.css --use autoprefixer"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/Saika667/P3_oh_my_food#readme",
   "dependencies": {
+    "postcss": "^8.4.14",
     "sass": "^1.52.1"
   }
 }
