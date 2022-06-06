@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
 }
 
@@ -41,7 +41,6 @@ hr {
     margin: 0 auto;
   }
 }
-
 /*-------------------------------------------------------------------------------------
                                     FIN Breakpoint desktop (grand écran)
 -------------------------------------------------------------------------------------*/
@@ -51,24 +50,20 @@ footer {
   width: 100%;
   box-sizing: border-box;
 }
-
 footer > div {
   margin-bottom: 3%;
   display: flex;
 }
-
 footer > div h2 {
   font-size: 25px;
   letter-spacing: 2px;
   color: white;
-  font-family: 'Shrikhand', sans-serif;
+  font-family: "Shrikhand", sans-serif;
   margin-bottom: 2%;
 }
-
 footer > div i {
   color: white;
 }
-
 footer > div a {
   color: white;
 }
@@ -85,7 +80,6 @@ footer > div a {
     margin-bottom: 2%;
   }
 }
-
 /*-------------------------------------------------------------------------------------
                                     FIN Breakpoint desktop
 -------------------------------------------------------------------------------------*/
@@ -97,7 +91,6 @@ footer > div a {
     margin-bottom: 2%;
   }
 }
-
 /*-------------------------------------------------------------------------------------
                                     FIN Breakpoint tablette
 -------------------------------------------------------------------------------------*/
@@ -122,12 +115,12 @@ footer > div a {
     width: 100%;
     margin: auto;
   }
+
   #oh-my-food-logo {
     width: 30%;
     margin: 2% auto;
   }
 }
-
 /*-------------------------------------------------------------------------------------
                                     FIN Breakpoint desktop
 -------------------------------------------------------------------------------------*/
@@ -139,12 +132,12 @@ footer > div a {
     width: 100%;
     margin: auto;
   }
+
   #oh-my-food-logo {
     width: 30%;
     margin: 2% auto;
   }
 }
-
 /*-------------------------------------------------------------------------------------
                                     FIN Breakpoint tablette
 -------------------------------------------------------------------------------------*/
@@ -309,13 +302,12 @@ footer > div a {
                     Texte
 ---------------------------------------------------------*/
 #titleOhMyFood {
-  font-family: 'Shrikhand', sans-serif;
+  font-family: "Shrikhand", sans-serif;
   font-size: 33px;
   width: 100%;
   text-align: center;
   margin: auto;
 }
-
 #titleOhMyFood span {
   display: inline-block;
   -webkit-animation: anim-text 600ms cubic-bezier(0.165, 0.44, 0.64, 1), color-text 1s cubic-bezier(0.165, 0.44, 0.64, 1);
@@ -346,7 +338,6 @@ footer > div a {
     opacity: 0;
   }
 }
-
 @keyframes showAndHide {
   0% {
     visibility: visible;
@@ -363,7 +354,6 @@ footer > div a {
     opacity: 0;
   }
 }
-
 /* --------------------------------------------------------
                     FIN Animation loader
 ---------------------------------------------------------*/
@@ -427,7 +417,6 @@ footer > div a {
     transform: rotateY(-35deg);
   }
 }
-
 @keyframes anim-text {
   0% {
     transform: rotateY(-35deg);
@@ -445,7 +434,6 @@ footer > div a {
     transform: rotateY(-35deg);
   }
 }
-
 @-webkit-keyframes color-text {
   0% {
     color: #9356DC;
@@ -457,7 +445,6 @@ footer > div a {
     color: #99E2D0;
   }
 }
-
 @keyframes color-text {
   0% {
     color: #9356DC;
@@ -469,7 +456,6 @@ footer > div a {
     color: #99E2D0;
   }
 }
-
 /* --------------------------------------------------------
                     FIN Animation Texte
 ---------------------------------------------------------*/
@@ -550,7 +536,6 @@ footer > div a {
     filter: blur(5px);
   }
 }
-
 @keyframes smoke-right {
   0% {
     transform: translate(0, 0) scale(1);
@@ -565,7 +550,6 @@ footer > div a {
     filter: blur(5px);
   }
 }
-
 @-webkit-keyframes smoke-left {
   0% {
     transform: translate(0, 0) scale(1);
@@ -580,7 +564,6 @@ footer > div a {
     filter: blur(5px);
   }
 }
-
 @keyframes smoke-left {
   0% {
     transform: translate(0, 0) scale(1);
@@ -595,7 +578,6 @@ footer > div a {
     filter: blur(5px);
   }
 }
-
 /* --------------------------------------------------------
                     Animation fumée
 ---------------------------------------------------------*/
@@ -681,7 +663,6 @@ footer > div a {
     transform: translateY(0);
   }
 }
-
 @keyframes lid-movement {
   0% {
     transform: skewY(-5deg) translateY(-10px);
@@ -761,33 +742,28 @@ footer > div a {
     transform: translateY(0);
   }
 }
-
 /* --------------------------------------------------------
                     Animation couvercle 
 ---------------------------------------------------------*/
 .search {
   background-color: #F2F2F2;
 }
-
 .search-location {
   display: flex;
   justify-content: center;
   align-items: baseline;
   background-color: #e5e5e5;
 }
-
 .search-location-container {
   width: 300px;
   display: flex;
 }
-
 .search-location-container-icon {
   width: 100px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-
 .search-location-container input {
   margin: 5% 0;
   border: none;
@@ -797,22 +773,18 @@ footer > div a {
   width: 200px;
   padding-left: 4%;
 }
-
 .search-description {
   text-align: center;
 }
-
 .search-description h1 {
   font-weight: bold;
   width: 65%;
   margin: 6% auto;
 }
-
 .search-description h2 {
   color: #737373;
   font-weight: 400;
 }
-
 .search-description-container-button {
   width: 60%;
   margin: auto;
@@ -825,16 +797,13 @@ footer > div a {
   flex-direction: column;
   align-items: center;
 }
-
 .working-title {
   width: 80%;
   margin-bottom: 5%;
 }
-
 .working-title h2 {
   font-size: 22px;
 }
-
 .working-proposal {
   box-shadow: 0 5px 9px 3px rgba(0, 0, 0, 0.15);
   background-color: #F2F2F2;
@@ -846,7 +815,6 @@ footer > div a {
   position: relative;
   cursor: pointer;
 }
-
 .working-proposal-number {
   background-color: #9356DC;
   border-radius: 50%;
@@ -859,13 +827,11 @@ footer > div a {
   text-align: center;
   color: white;
 }
-
 .working-proposal-description {
   display: flex;
   align-items: baseline;
   width: 100%;
 }
-
 .working-proposal-description-container-icon {
   display: flex;
   width: 60px;
@@ -873,21 +839,17 @@ footer > div a {
   justify-content: center;
   height: 100%;
 }
-
 .working-proposal-description-container-icon i {
   color: #a6a6a6;
   padding-left: 10px;
 }
-
 .working-proposal-description h2 {
   font-size: 15px;
   white-space: nowrap;
 }
-
 .working-proposal:hover {
   background-color: rgba(147, 86, 220, 0.2);
 }
-
 .working-proposal:hover i {
   color: #9356DC;
 }
@@ -900,16 +862,13 @@ footer > div a {
   align-items: center;
   padding: 10% 0 7% 0;
 }
-
 .restaurant-title {
   width: 90%;
   margin-bottom: 5%;
 }
-
 .restaurant-title h2 {
   font-size: 22px;
 }
-
 .restaurant-ad {
   width: 90%;
   border-radius: 20px;
@@ -922,7 +881,6 @@ footer > div a {
   margin-bottom: 5%;
   box-shadow: 0 3px 6px 5px rgba(0, 0, 0, 0.05);
 }
-
 .restaurant-ad img {
   width: 100%;
   -o-object-fit: cover;
@@ -931,7 +889,6 @@ footer > div a {
   object-position: center;
   height: 180px;
 }
-
 .restaurant-ad-new {
   position: absolute;
   background-color: #99E2D0;
@@ -940,20 +897,16 @@ footer > div a {
   right: 7%;
   top: 6%;
 }
-
 .restaurant-ad-description {
   height: 70px;
 }
-
 .restaurant-ad-description h2 {
   white-space: nowrap;
   margin: 1% 0 0 7%;
 }
-
 .restaurant-ad-description p {
   margin: 1% 0 0 7%;
 }
-
 .restaurant-ad-container-icon {
   width: 70px;
   display: flex;
@@ -988,7 +941,6 @@ footer > div a {
     opacity: 1;
   }
 }
-
 @keyframes heart {
   0% {
     opacity: 0.1;
@@ -997,7 +949,6 @@ footer > div a {
     opacity: 1;
   }
 }
-
 /*-------------------------------------------------------------------------------------
                                     Breakpoint desktop
 -------------------------------------------------------------------------------------*/
@@ -1009,6 +960,7 @@ footer > div a {
     width: 30%;
     padding: 3%;
   }
+
   .working {
     flex-direction: row;
     flex-wrap: wrap;
@@ -1022,6 +974,7 @@ footer > div a {
     width: 25%;
     margin: auto;
   }
+
   .restaurant {
     flex-direction: initial;
     flex-wrap: wrap;
@@ -1064,7 +1017,6 @@ footer > div a {
     align-items: center;
   }
 }
-
 /*-------------------------------------------------------------------------------------
                                     FIN Breakpoint desktop
 -------------------------------------------------------------------------------------*/
@@ -1079,6 +1031,7 @@ footer > div a {
     width: 40%;
     padding: 3%;
   }
+
   .working {
     flex-direction: row;
     flex-wrap: wrap;
@@ -1095,6 +1048,7 @@ footer > div a {
   .working-proposal-description h2 {
     font-size: 12px;
   }
+
   .restaurant {
     flex-direction: initial;
     flex-wrap: wrap;
@@ -1112,14 +1066,12 @@ footer > div a {
     margin: 3% 0 1% 7%;
   }
 }
-
 /*-------------------------------------------------------------------------------------
                                     FIN Breakpoint tablette
 -------------------------------------------------------------------------------------*/
 .main {
   width: 100%;
 }
-
 .main img {
   width: 100%;
   position: relative;
@@ -1138,19 +1090,17 @@ footer > div a {
   z-index: 1;
   border-radius: 30px 30px 0 0;
 }
-
 .menu-title {
   background-color: #F2F2F2;
   border-radius: 30px 30px 0 0;
   display: flex;
   justify-content: space-between;
   height: 130px;
-  font-family: 'shrikhand', sans-serif;
+  font-family: "shrikhand", sans-serif;
   line-height: 130px;
   width: 94%;
   margin: auto;
 }
-
 .menu-title h1 {
   font-size: 30px;
   letter-spacing: 2px;
@@ -1158,18 +1108,26 @@ footer > div a {
   overflow: hidden;
   white-space: nowrap;
 }
-
 .menu-title-container-icon {
   width: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .menu-title-container-icon i {
   color: #a6a6a6;
   font-size: 30px;
   cursor: pointer;
+}
+
+.menu-title-container-icon:hover i, .menu-title-container-icon:active i, .menu-title-container-icon:focus i {
+  -webkit-animation: heart 1s;
+  animation: heart 1s;
+  background: linear-gradient(-7deg, #9356DC 4%, #FF79DA 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
 }
 
 .proposal {
@@ -1186,29 +1144,24 @@ footer > div a {
   -webkit-animation: appearance 1s backwards;
   animation: appearance 1s backwards;
 }
-
 .proposal-description {
   margin-bottom: 8px;
 }
-
 .proposal-description h2 {
   font-size: 23px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-
 .proposal-price {
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
 }
-
 .proposal-price span {
   font-weight: bold;
   transition-duration: 500ms;
 }
-
 .proposal-price p {
   text-overflow: ellipsis;
   overflow: hidden;
@@ -1250,7 +1203,6 @@ footer > div a {
     transform: translateY(0);
   }
 }
-
 @keyframes appearance {
   0% {
     opacity: 0;
@@ -1261,7 +1213,6 @@ footer > div a {
     transform: translateY(0);
   }
 }
-
 @-webkit-keyframes appearanceDesktopTablet {
   0% {
     opacity: 0;
@@ -1272,7 +1223,6 @@ footer > div a {
     transform: translateX(0);
   }
 }
-
 @keyframes appearanceDesktopTablet {
   0% {
     opacity: 0;
@@ -1283,25 +1233,21 @@ footer > div a {
     transform: translateX(0);
   }
 }
-
 /*-------------------------------------------------------------------------------------
                                     FIN Animation
 -------------------------------------------------------------------------------------*/
 .proposal:hover .proposal-description h2 {
   margin-right: 60px;
 }
-
 .proposal:hover .check-animation {
   width: 80px;
   height: 80px;
   border-radius: 0 20px 20px 0;
   right: 0;
 }
-
 .proposal:hover .check-animation i {
   transform: rotate(360deg);
 }
-
 .proposal:hover span {
   margin-right: 70px;
 }
@@ -1309,7 +1255,6 @@ footer > div a {
 .starter {
   background-color: #F2F2F2;
 }
-
 .starter-title {
   text-transform: uppercase;
   margin: 0 0 0 3%;
@@ -1319,7 +1264,6 @@ footer > div a {
 .desserts {
   background-color: #F2F2F2;
 }
-
 .dishes-title,
 .desserts-title {
   text-transform: uppercase;
@@ -1346,7 +1290,6 @@ footer > div a {
   top: 12px;
   transition-duration: 750ms;
 }
-
 .check-animation i {
   color: white;
   font-size: 20px;
@@ -1361,6 +1304,7 @@ footer > div a {
   hr {
     margin: 4% 0;
   }
+
   .menu {
     display: flex;
     flex-wrap: wrap;
@@ -1368,9 +1312,10 @@ footer > div a {
   .menu-title {
     width: 90%;
   }
+
   .starter,
-  .dishes,
-  .desserts {
+.dishes,
+.desserts {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1378,31 +1323,35 @@ footer > div a {
     margin: auto;
   }
   .starter-title,
-  .dishes-title,
-  .desserts-title {
+.dishes-title,
+.desserts-title {
     width: 90%;
     font-size: 37px;
   }
+
   .starter-title {
     margin: 0;
   }
+
   .dishes-title {
     margin: 4% 0 0 0;
   }
+
   .desserts-title {
     margin: 4% 0 0 0;
   }
+
   .proposal {
     width: 100%;
     -webkit-animation: appearanceDesktopTablet 1s backwards;
     animation: appearanceDesktopTablet 1s backwards;
   }
+
   .button-command-container {
     width: 25%;
     padding: 4% 0;
   }
 }
-
 /*-------------------------------------------------------------------------------------
                                     FIN Breakpoint desktop
 -------------------------------------------------------------------------------------*/
@@ -1413,12 +1362,14 @@ footer > div a {
   hr {
     margin: 1% 0;
   }
+
   .menu-title {
     width: 90%;
   }
+
   .starter,
-  .dishes,
-  .desserts {
+.dishes,
+.desserts {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -1426,32 +1377,36 @@ footer > div a {
     margin: auto;
   }
   .starter-title,
-  .dishes-title,
-  .desserts-title {
+.dishes-title,
+.desserts-title {
     width: 100%;
     font-size: 27px;
   }
+
   .starter-title {
     margin: 0;
   }
+
   .dishes-title {
     margin: 4% 0 0 0;
   }
+
   .desserts-title {
     margin: 4% 0 0 0;
   }
+
   .proposal {
     width: 45%;
     margin: 0 0 3% 0;
     -webkit-animation: appearanceDesktopTablet 1s backwards;
     animation: appearanceDesktopTablet 1s backwards;
   }
+
   .button-command-container {
     width: 30%;
     padding: 4% 0;
   }
 }
-
 /*-------------------------------------------------------------------------------------
                                     FIN Breakpoint tablette
 -------------------------------------------------------------------------------------*/
@@ -1466,7 +1421,6 @@ footer > div a {
   border: none;
   cursor: pointer;
 }
-
 #button-research:hover {
   background: linear-gradient(-7deg, #a16be0 4%, #ff93e1 100%);
   box-shadow: 0 5px 9px 3px rgba(0, 0, 0, 0.3);
@@ -1479,7 +1433,6 @@ footer > div a {
   left: 10px;
   cursor: pointer;
 }
-
 #button-back i {
   color: black;
   font-size: 20px;
@@ -1493,7 +1446,6 @@ footer > div a {
     font-size: 40px;
   }
 }
-
 /*-------------------------------------------------------------------------------------
                                     FIN Breakpoint desktop
 -------------------------------------------------------------------------------------*/
@@ -1505,7 +1457,8 @@ footer > div a {
     font-size: 30px;
   }
 }
-
 /*-------------------------------------------------------------------------------------
                                     FIN Breakpoint tablette
 -------------------------------------------------------------------------------------*/
+
+/*# sourceMappingURL=app.css.map */

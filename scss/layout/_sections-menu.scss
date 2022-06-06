@@ -56,6 +56,20 @@
     }
 }
 
+.menu-title-container-icon {
+    &:hover, &:active, &:focus {
+        i {
+        -webkit-animation: heart 1s;
+                animation: heart 1s;
+        background: $gradient;
+        -webkit-background-clip: text;
+                background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+        }
+    }
+}
+
 .proposal {
     background-color: white;
     border-radius: 20px;
