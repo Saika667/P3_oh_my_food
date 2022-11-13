@@ -1,7 +1,6 @@
 # Oh my food
 
-Dans le cadre de la formation Développeur Web chez Openclassrooms, j'ai réalisé le site **Oh my food** suivant la maquette imposée.
-Il s'agit du troisième projet dans lequel **les animations** sont mises à l'honneur. 
+*Dans le cadre de la formation OpenClassrooms "développeur web"*
 
 ## Description du projet
 
@@ -20,3 +19,8 @@ Cette commande permet d'ajouter les prefixers.
  
 Lors de la mise en production, lancer la commande **sass-prod** avec : *npm run sass-prod*
 Cette commande permet de **compresser le fichier CSS** et ainsi d'être moins volumineux, pour un temps de chargement de la page web plus rapide.
+
+**Spécificités du projet**
+- Responsive
+- SCSS
+- Travail focalisé sur les animations
